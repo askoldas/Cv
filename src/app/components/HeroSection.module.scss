@@ -1,0 +1,119 @@
+.container {
+  height: 200vh; // gives enough scroll space
+  position: relative;
+}
+
+.heroInner {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: black;
+  color: white;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
+}
+
+.leftText {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(1.5rem, 5vw, 4rem);
+  z-index: 10;
+  min-height: 100vh;
+
+  @media (max-width: 640px) {
+    min-height: auto;
+  }
+}
+
+.rightVideo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  @media (max-width: 640px) {
+    order: -1;
+    min-height: 100vh;
+  }
+}
+
+.video {
+  height: 100vh;
+  width: auto;
+  object-fit: cover;
+}
+
+// Typography
+
+.headlinePrimary {
+  font-family: var(--font-cormorant);
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 4rem;
+}
+
+.headlineSecondary {
+  font-family: var(--font-inter);
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.headlineFinal {
+  font-family: var(--font-inter);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+// CTA Buttons
+
+.ctaButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.cta {
+  font-family: var(--font-inter);
+  padding: 1rem 2rem;
+  background: white;
+  color: black;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.cta:hover {
+  background: #eee;
+  transform: translateY(-2px);
+}
+
+// Cursor animation (typing effect)
+
+.cursor {
+  display: inline-block;
+  width: 1px; // thinner than 1ch
+  height: 1em;
+  background-color: currentColor;
+  margin-left: 2px;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
