@@ -1,5 +1,6 @@
+/* Layout */
 .container {
-  height: 200vh; // gives enough scroll space
+  height: 205vh;
   position: relative;
 }
 
@@ -51,16 +52,49 @@
   object-fit: cover;
 }
 
-// Typography
-
+/* Headline */
 .headlinePrimary {
-  font-family: var(--font-cormorant);
+  position: relative;
+  font-family: var(--font-inter);
   font-size: 3rem;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  white-space: pre-wrap;
+  gap: 0.8rem;
+  height: calc(3rem * 1.2 + 6.6rem + 0.8rem); // top line + bottom line + gap
 }
 
+.lineTop {
+  min-height: 3.6rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  width: 100%;
+  font-weight: 300;
+}
+
+.lineBottom {
+  min-height: 6.6rem;
+  width: 100%;
+}
+
+/* Highlighted full line */
+.wordHighlight {
+  font-family: var(--font-cormorant);
+  font-size: 6rem;
+  line-height: 1.1;
+  display: inline-block;
+
+  @media (max-width: 640px) {
+    font-size: 4rem;
+  }
+}
+
+/* Subheading and Paragraphs */
 .headlineSecondary {
   font-family: var(--font-inter);
   font-size: 1.25rem;
@@ -69,15 +103,15 @@
   margin-bottom: 2rem;
 }
 
-.headlineFinal {
+.introParagraph,
+.outroParagraph {
   font-family: var(--font-inter);
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 1.4;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 600px;
 }
 
-// CTA Buttons
-
+/* CTA Buttons */
 .ctaButtons {
   display: flex;
   flex-wrap: wrap;
@@ -102,11 +136,10 @@
   transform: translateY(-2px);
 }
 
-// Cursor animation (typing effect)
-
+/* Cursor animation */
 .cursor {
   display: inline-block;
-  width: 1px; // thinner than 1ch
+  width: 1px;
   height: 1em;
   background-color: currentColor;
   margin-left: 2px;
