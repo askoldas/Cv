@@ -1,5 +1,4 @@
-// app/layout.tsx
-import './globals.css'
+import './globals.scss'
 import { Inter, Cormorant_Garamond } from 'next/font/google'
 
 const inter = Inter({
@@ -24,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${cormorant.variable}`}>
-      <body className="bg-black text-white">{children}</body>
+      <body>{children}</body>
     </html>
   )
 }

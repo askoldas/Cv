@@ -102,8 +102,8 @@ export default function HeroSection() {
             </p>
             <div className={styles.ctaButtons}>
               <Link href="/contact" className={`${styles.cta} ${styles.solid}`}>Get in Touch</Link>
-              <Link href="/projects" className={`${styles.cta} ${styles.outlined}`}>Projects</Link>
-              <Link href="/stack" className={`${styles.cta} ${styles.outlined}`}>Resume</Link>
+              <Link href="/portfolio" className={`${styles.cta} ${styles.outlined}`}>Projects</Link>
+              <Link href="/about" className={`${styles.cta} ${styles.outlined}`}>Resume</Link>
             </div>
           </motion.div>
         </div>
