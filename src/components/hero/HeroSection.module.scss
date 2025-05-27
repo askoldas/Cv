@@ -23,7 +23,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: clamp(1.5rem, 5vw, 4rem);
   z-index: 10;
   min-height: 100vh;
@@ -155,7 +155,6 @@
   transform: translateY(-2px);
 }
 
-
 /* Cursor animation */
 .cursor {
   display: inline-block;
@@ -169,4 +168,12 @@
 @keyframes blink {
   0%, 50% { opacity: 1; }
   50.01%, 100% { opacity: 0; }
+}
+
+/* ✅ Final scroll-swappable layout-based blocks */
+.introBlock,
+.outroBlock {
+  width: 100%;
+  margin-top: auto;
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
