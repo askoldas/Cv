@@ -137,7 +137,7 @@ export default function HeroSection() {
         <div className={styles.rightVideo}>
           <video
             ref={videoRef}
-            src="/intro.mp4"
+            src="/Cv/intro.mp4"
             muted
             playsInline
             preload="auto"
