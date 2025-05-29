@@ -23,7 +23,6 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   padding: clamp(1.5rem, 5vw, 4rem);
   z-index: 10;
   min-height: 100vh;
@@ -31,9 +30,42 @@
   @media (max-width: 640px) {
     position: relative;
     z-index: 1;
+    align-items: flex-start;
+    text-align: left;
+    min-width: 100%;
   }
 }
 
+.headlineWrapper {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* Content block wrapper */
+.blockWrapper {
+  position: relative;
+  width: 100%;
+  margin-top: auto;
+  min-height: 220px; // ✅ guarantees space
+}
+
+/* Intro / Outro Blocks */
+.introBlock,
+.outroBlock {
+  width: 100%;
+  opacity: 0;
+  z-index: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+
+  @media (max-width: 640px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* Right Video Section */
 .rightVideo {
   flex: 1;
   display: flex;
@@ -60,21 +92,19 @@
   }
 }
 
-/* Headline */
+/* Headline Text */
 .headlinePrimary {
   position: relative;
   font-family: var(--font-inter);
   font-size: 3rem;
   font-weight: 600;
   line-height: 1.2;
-  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
   white-space: pre-wrap;
   gap: 0.8rem;
-  height: calc(3rem * 1.2 + 6.6rem + 0.8rem); // top line + bottom line + gap
+  height: calc(3rem * 1.2 + 6.6rem + 0.8rem);
 }
 
 .lineTop {
@@ -90,7 +120,7 @@
   width: 100%;
 }
 
-/* Highlighted full line */
+/* Highlighted Line */
 .wordHighlight {
   font-family: var(--font-cormorant);
   font-size: 6rem;
@@ -102,7 +132,7 @@
   }
 }
 
-/* Subheading and Paragraphs */
+/* Subheading / Paragraphs */
 .headlineSecondary {
   font-family: var(--font-inter);
   font-size: 1.25rem;
@@ -139,7 +169,6 @@
   text-align: center;
 }
 
-/* Solid button */
 .cta.solid {
   background: white;
   color: black;
@@ -151,7 +180,6 @@
   transform: translateY(-2px);
 }
 
-/* Outlined button */
 .cta.outlined {
   background: transparent;
   color: white;
@@ -163,7 +191,7 @@
   transform: translateY(-2px);
 }
 
-/* Cursor animation */
+/* Cursor */
 .cursor {
   display: inline-block;
   width: 1px;
@@ -176,12 +204,4 @@
 @keyframes blink {
   0%, 50% { opacity: 1; }
   50.01%, 100% { opacity: 0; }
-}
-
-/* Scroll-swappable blocks */
-.introBlock,
-.outroBlock {
-  width: 100%;
-  margin-top: auto;
-  transition: opacity 0.4s ease, transform 0.4s ease;
 }

@@ -22,7 +22,6 @@ export default function HeroSection() {
   const [typingDone, setTypingDone] = useState(false)
   const [showCursor, setShowCursor] = useState(true)
 
-  // Typing on mount
   useEffect(() => {
     let index = 0
     const interval = setInterval(() => {
@@ -38,7 +37,6 @@ export default function HeroSection() {
     return () => clearInterval(interval)
   }, [])
 
-  // Scroll-driven headline text transition
   useEffect(() => {
     if (!typingDone || !sectionRef.current) return
 
@@ -57,12 +55,10 @@ export default function HeroSection() {
           setTypedText(introText)
         } else if (p >= 0.1 && p < 0.2) {
           const percent = 1 - (p - 0.1) / 0.1
-          const sliceLen = Math.round(introLen * percent)
-          setTypedText(introText.slice(0, sliceLen))
+          setTypedText(introText.slice(0, Math.round(introLen * percent)))
         } else if (p >= 0.2 && p < 0.3) {
           const percent = (p - 0.2) / 0.1
-          const sliceLen = Math.round(outroLen * percent)
-          setTypedText(outroText.slice(0, sliceLen))
+          setTypedText(outroText.slice(0, Math.round(outroLen * percent)))
         } else {
           setTypedText(outroText)
         }
@@ -72,44 +68,41 @@ export default function HeroSection() {
     return () => scroll.kill()
   }, [typingDone])
 
-  // Block transitions + video scroll sync
   useEffect(() => {
-    if (!sectionRef.current || !videoRef.current) return
+    if (!sectionRef.current || !videoRef.current || !introBlockRef.current || !outroBlockRef.current) return
 
     const video = videoRef.current
     const intro = introBlockRef.current
     const outro = outroBlockRef.current
     const section = sectionRef.current
 
-    // 1. Intro block fades out fully between 0% and ~30% scroll
-    gsap.fromTo(intro,
-      { opacity: 1 },
-      {
-        opacity: 0,
-        scrollTrigger: {
-          trigger: section,
-          start: 'top top',
-          end: 'top+=30%',
-          scrub: true,
-        },
-      }
-    )
+    gsap.set(outro, { opacity: 0, pointerEvents: 'none', zIndex: 0 })
+    gsap.set(intro, { opacity: 1, pointerEvents: 'auto', zIndex: 1 })
 
-    // 2. Outro block fades in after intro is gone (~30% onward)
-    gsap.fromTo(outro,
-      { opacity: 0 },
-      {
-        opacity: 1,
-        scrollTrigger: {
-          trigger: section,
-          start: 'top+=32%',
-          end: 'top+=50%',
-          scrub: true,
-        },
+    gsap.to(intro, {
+      opacity: 0,
+      pointerEvents: 'none',
+      zIndex: 0,
+      scrollTrigger: {
+        trigger: section,
+        start: 'top top',
+        end: 'top+=30%',
+        scrub: true
       }
-    )
+    })
 
-    // 3. Video scroll sync
+    gsap.to(outro, {
+      opacity: 1,
+      pointerEvents: 'auto',
+      zIndex: 1,
+      scrollTrigger: {
+        trigger: section,
+        start: 'top+=32%',
+        end: 'top+=50%',
+        scrub: true
+      }
+    })
+
     const maxVideoTime = 2
     let rafId: number
 
@@ -128,7 +121,6 @@ export default function HeroSection() {
     }
 
     rafId = requestAnimationFrame(updateVideo)
-
     return () => cancelAnimationFrame(rafId)
   }, [])
 
@@ -136,14 +128,16 @@ export default function HeroSection() {
     <section ref={sectionRef} className={styles.container}>
       <div className={styles.heroInner}>
         <div className={styles.leftText}>
-          <HeroHeadline typedText={typedText} showCursor={showCursor} />
+          <div className={styles.headlineWrapper}>
+            <HeroHeadline typedText={typedText} showCursor={showCursor} />
+          </div>
           <HeroContentBlock introRef={introBlockRef} outroRef={outroBlockRef} />
         </div>
 
         <div className={styles.rightVideo}>
           <video
             ref={videoRef}
-            src="/Cv/intro.mp4"
+            src="/intro.mp4"
             muted
             playsInline
             preload="auto"
