@@ -1,11 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",              // enables static export
-  distDir: "docs",               // export to /docs folder for GitHub Pages
-  basePath: "/Cv",               // necessary for project path hosting
+  output: "export",
+  distDir: "docs",
+  basePath: "/Cv",
+  assetPrefix: "/Cv", // ✅ THIS IS THE KEY FIX
   images: {
-    unoptimized: true,           // disables Image Optimization (required for export)
+    unoptimized: true,
   },
 };
 
