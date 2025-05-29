@@ -8,8 +8,8 @@ export default function HeroContentBlock({
   introRef,
   outroRef,
 }: {
-  introRef: RefObject<HTMLDivElement>
-  outroRef: RefObject<HTMLDivElement>
+  introRef: RefObject<HTMLDivElement | null>
+  outroRef: RefObject<HTMLDivElement | null>
 }) {
   return (
     <>
