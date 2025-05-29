@@ -29,7 +29,8 @@
   min-height: 100vh;
 
   @media (max-width: 640px) {
-    min-height: auto;
+    position: relative;
+    z-index: 1;
   }
 }
 
@@ -41,8 +42,9 @@
   overflow: hidden;
 
   @media (max-width: 640px) {
-    order: -1;
-    min-height: 100vh;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
   }
 }
 
@@ -50,6 +52,12 @@
   height: 100vh;
   width: auto;
   object-fit: cover;
+
+  @media (max-width: 640px) {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+  }
 }
 
 /* Headline */
@@ -170,7 +178,7 @@
   50.01%, 100% { opacity: 0; }
 }
 
-/* ✅ Final scroll-swappable layout-based blocks */
+/* Scroll-swappable blocks */
 .introBlock,
 .outroBlock {
   width: 100%;
