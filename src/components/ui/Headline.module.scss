@@ -1,0 +1,37 @@
+.headlineWrapper {
+  width: 100%;
+  padding: clamp(1.5rem, 5vw, 4rem);
+}
+
+.headlinePrimary {
+  font-family: var(--font-inter);
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  white-space: pre-wrap;
+  gap: 0.8rem;
+  color: white;
+}
+
+.lineTop {
+  min-height: 3.6rem;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+  width: 100%;
+}
+
+.lineBottom {
+  min-height: 6.6rem;
+  font-family: var(--font-cormorant);
+  font-size: 6rem;
+  line-height: 1.1;
+  width: 100%;
+
+  @media (max-width: 640px) {
+    font-size: 4rem;
+  }
+}

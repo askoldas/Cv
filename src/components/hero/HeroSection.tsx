@@ -10,7 +10,6 @@ import HeroContentBlock from './HeroContentBlock'
 gsap.registerPlugin(ScrollTrigger)
 
 export default function HeroSection() {
-  // Inline version of useViewportHeight
   useEffect(() => {
     const setVh = () => {
       const vh = window.innerHeight * 0.01
@@ -39,6 +38,7 @@ export default function HeroSection() {
   const [typingDone, setTypingDone] = useState(false)
   const [showCursor, setShowCursor] = useState(true)
 
+  // Typing animation
   useEffect(() => {
     let index = 0
     const interval = setInterval(() => {
@@ -54,6 +54,7 @@ export default function HeroSection() {
     return () => clearInterval(interval)
   }, [])
 
+  // Scroll-triggered text switch
   useEffect(() => {
     if (!typingDone || !sectionRef.current) return
 
@@ -85,13 +86,14 @@ export default function HeroSection() {
     return () => scroll.kill()
   }, [typingDone])
 
+  // Fade in/out blocks & set video time on scroll
   useEffect(() => {
-    if (!sectionRef.current || !videoRef.current || !introBlockRef.current || !outroBlockRef.current) return
-
+    const section = sectionRef.current
     const video = videoRef.current
     const intro = introBlockRef.current
     const outro = outroBlockRef.current
-    const section = sectionRef.current
+
+    if (!section || !video || !intro || !outro) return
 
     gsap.set(outro, { opacity: 0, pointerEvents: 'none', zIndex: 0 })
     gsap.set(intro, { opacity: 1, pointerEvents: 'auto', zIndex: 1 })
@@ -120,25 +122,22 @@ export default function HeroSection() {
       }
     })
 
-    const maxVideoTime = 2
-    let rafId: number
+    // Optional: update video time once on scroll using ScrollTrigger
+    ScrollTrigger.create({
+      trigger: section,
+      start: 'top top',
+      end: 'bottom top',
+      scrub: true,
+      onUpdate: (self) => {
+        const progress = self.progress
+        const maxVideoTime = 2
+        const targetTime = maxVideoTime * progress
 
-    const updateVideo = () => {
-      const sectionTop = section.offsetTop
-      const sectionHeight = section.offsetHeight
-      const scrollY = window.scrollY
-      const progress = Math.min(Math.max((scrollY - sectionTop) / sectionHeight, 0), 1)
-      const targetTime = maxVideoTime * progress
-
-      if (video.readyState >= 2) {
-        video.currentTime = targetTime
+        if (video.readyState >= 2 && isFinite(targetTime)) {
+          video.currentTime = targetTime
+        }
       }
-
-      rafId = requestAnimationFrame(updateVideo)
-    }
-
-    rafId = requestAnimationFrame(updateVideo)
-    return () => cancelAnimationFrame(rafId)
+    })
   }, [])
 
   return (
@@ -154,7 +153,7 @@ export default function HeroSection() {
         <div className={styles.rightVideo}>
           <video
             ref={videoRef}
-            src="/Cv/intro.mp4"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/intro.mp4`}
             muted
             playsInline
             preload="auto"

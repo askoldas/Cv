@@ -1,37 +1,63 @@
 'use client'
 
-import HeroHeadline from '@/components/hero/HeroHeadline'
-import styles from '@/components/hero/HeroSection.module.scss'
+import { useState } from 'react'
+import Link from 'next/link'
+import styles from './Menu.module.scss'
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
 export default function Menu() {
-  const typedText = "Let's make your ideas\nVisible."
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggleMenu = () => setIsOpen(prev => !prev)
 
   return (
-    <section className={styles.container}>
-      <div className={styles.heroInner}>
-        <div className={styles.leftText}>
-          <HeroHeadline typedText={typedText} showCursor={false} />
+    <>
+      {/* Top Navigation */}
+      <nav className={styles.navbar}>
+        <Link href="/" className={styles.logo}>
+          <img src={`${basePath}/as-logo.svg`} alt="Askold Logo" />
+        </Link>
+        <button className={styles.burger} onClick={toggleMenu} aria-label="Toggle menu">
+          <span />
+          <span />
+          <span />
+        </button>
+      </nav>
 
-          <div className={styles.outroBlock}>
-            <p className={styles.outroParagraph}>
+      {/* Fullscreen Overlay */}
+      <div className={`${styles.menuOverlay} ${isOpen ? styles.open : ''}`}>
+        {/* Left Column: Headline + Text + Buttons */}
+        <div className={styles.menuContent}>
+          {/* Headline */}
+          <h1 className={styles.headline}>
+            <div className={styles.lineTop}>Let’s make your ideas</div>
+            <div className={styles.lineBottom}>Visible.</div>
+          </h1>
+
+          {/* Paragraph + CTA Buttons */}
+          <div>
+            <p className={styles.menuText}>
               Let’s explore how I can help bring your next product or brand to life.
             </p>
+
             <div className={styles.ctaButtons}>
-              <a href="/contact" className={`${styles.cta} ${styles.solid}`}>Get in Touch</a>
-              <a href="/projects" className={`${styles.cta} ${styles.outlined}`}>Projects</a>
-              <a href="/stack" className={`${styles.cta} ${styles.outlined}`}>Resume</a>
+              <Link href="/contact" className={`${styles.cta} ${styles.solid}`}>Get in touch</Link>
+              <Link href="/portfolio" className={`${styles.cta} ${styles.outlined}`}>Projects</Link>
+              <Link href="/resume" className={`${styles.cta} ${styles.outlined}`}>Resume</Link>
             </div>
           </div>
         </div>
 
-        <div className={styles.rightVideo}>
+        {/* Right Column: Poster Image */}
+        <div className={styles.posterWrapper}>
           <img
-            src="/menu-poster.jpg"
-            alt="Sculpture with bonsai tree"
-            className={styles.video}
+            src={`${basePath}/menu-poster.jpeg`}
+            alt="Menu Poster"
+            className={styles.posterImage}
           />
         </div>
       </div>
-    </section>
+    </>
   )
 }
