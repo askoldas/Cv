@@ -12,7 +12,7 @@ export default function HeroContentBlock({
   outroRef: RefObject<HTMLDivElement | null>
 }) {
   return (
-    <>
+    <div className={styles.blockWrapper}>
       <div ref={introRef} className={styles.introBlock}>
         <h2 className={styles.headlineSecondary}>
           Web Engineering · UI/UX · Product Design
@@ -32,6 +32,6 @@ export default function HeroContentBlock({
           <Link href="/about" className={`${styles.cta} ${styles.outlined}`}>Resume</Link>
         </div>
       </div>
-    </>
+    </div>
   )
 }
