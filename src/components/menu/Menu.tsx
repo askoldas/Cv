@@ -44,7 +44,7 @@ export default function Menu() {
             <div className={styles.ctaButtons}>
               <Link href="/contact" className={`${styles.cta} ${styles.solid}`}>Get in touch</Link>
               <Link href="/portfolio" className={`${styles.cta} ${styles.outlined}`}>Projects</Link>
-              <Link href="/resume" className={`${styles.cta} ${styles.outlined}`}>Resume</Link>
+              <Link href="/about" className={`${styles.cta} ${styles.outlined}`}>Resume</Link>
             </div>
           </div>
         </div>

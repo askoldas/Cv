@@ -1,0 +1,103 @@
+/* [project]/src/app/about/about.module.scss.module.css [app-client] (css) */
+.about-module-scss-module__6vdO3W__container {
+  color: #fff;
+  padding-top: 64px;
+  background-color: #000;
+  flex-direction: column;
+  gap: 3rem;
+  min-height: 100vh;
+  padding-inline: 1rem;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.about-module-scss-module__6vdO3W__header {
+  width: 100%;
+}
+
+.about-module-scss-module__6vdO3W__aboutSection {
+  text-align: center;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.about-module-scss-module__6vdO3W__aboutSection h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.about-module-scss-module__6vdO3W__aboutSection p {
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.about-module-scss-module__6vdO3W__skillSection {
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.about-module-scss-module__6vdO3W__skillSection h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.about-module-scss-module__6vdO3W__skillSection p {
+  color: #bbb;
+}
+
+.about-module-scss-module__6vdO3W__skillSection .about-module-scss-module__6vdO3W__toolGrid {
+  flex-wrap: wrap;
+  gap: 1rem;
+  display: flex;
+}
+
+.about-module-scss-module__6vdO3W__skillSection .about-module-scss-module__6vdO3W__toolGrid span {
+  color: #000;
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: .5rem 1rem;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.about-module-scss-module__6vdO3W__processSection {
+  flex-direction: column;
+  gap: 5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-block: 5rem;
+  display: flex;
+}
+
+.about-module-scss-module__6vdO3W__step {
+  opacity: 0;
+  will-change: transform, opacity;
+  transform: translateY(40px);
+}
+
+.about-module-scss-module__6vdO3W__step .about-module-scss-module__6vdO3W__stepNumber {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.about-module-scss-module__6vdO3W__step .about-module-scss-module__6vdO3W__stepTitle {
+  margin-top: .3rem;
+  font-size: 1.4rem;
+}
+
+.about-module-scss-module__6vdO3W__step .about-module-scss-module__6vdO3W__stepDescription {
+  color: #bbb;
+  max-width: 700px;
+  margin-top: .8rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/*# sourceMappingURL=src_app_about_about_module_scss_module_css_f9ee138c._.single.css.map*/

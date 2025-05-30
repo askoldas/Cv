@@ -1,0 +1,293 @@
+/* [project]/src/components/menu/Menu.module.scss.module.css [app-client] (css) */
+.Menu-module-scss-module__yPCSua__navbar {
+  z-index: 999;
+  background-color: #000;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  padding: 1rem 2rem;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.Menu-module-scss-module__yPCSua__logo img {
+  width: auto;
+  height: 28px;
+  display: block;
+}
+
+.Menu-module-scss-module__yPCSua__burger {
+  cursor: pointer;
+  z-index: 1000;
+  background: none;
+  border: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  display: flex;
+}
+
+.Menu-module-scss-module__yPCSua__burger span {
+  background: #fff;
+  width: 24px;
+  height: 2px;
+  display: block;
+}
+
+.Menu-module-scss-module__yPCSua__menuOverlay {
+  z-index: 998;
+  color: #fff;
+  opacity: 0;
+  pointer-events: none;
+  background: #000;
+  flex-direction: row;
+  align-items: stretch;
+  transition: opacity .4s;
+  display: flex;
+  position: fixed;
+  inset: 64px 0 0;
+}
+
+.Menu-module-scss-module__yPCSua__menuOverlay.Menu-module-scss-module__yPCSua__open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (width <= 640px) {
+  .Menu-module-scss-module__yPCSua__menuOverlay {
+    flex-direction: column;
+  }
+}
+
+.Menu-module-scss-module__yPCSua__menuContent {
+  z-index: 10;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  padding: clamp(1.5rem, 5vw, 4rem);
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 640px) {
+  .Menu-module-scss-module__yPCSua__menuContent {
+    z-index: 2;
+  }
+}
+
+.Menu-module-scss-module__yPCSua__headline {
+  font-family: var(--font-inter);
+  white-space: pre-wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .8rem;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  display: flex;
+}
+
+.Menu-module-scss-module__yPCSua__lineTop {
+  width: 100%;
+  min-height: 3.6rem;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.Menu-module-scss-module__yPCSua__lineBottom {
+  min-height: 6.6rem;
+  font-family: var(--font-cormorant);
+  width: 100%;
+  font-size: 6rem;
+  line-height: 1.1;
+}
+
+@media (width <= 640px) {
+  .Menu-module-scss-module__yPCSua__lineBottom {
+    font-size: 4rem;
+  }
+}
+
+.Menu-module-scss-module__yPCSua__menuText {
+  font-family: var(--font-inter);
+  max-width: 600px;
+  margin-top: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.Menu-module-scss-module__yPCSua__ctaButtons {
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.Menu-module-scss-module__yPCSua__cta {
+  font-family: var(--font-inter);
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .2s;
+  display: inline-block;
+}
+
+.Menu-module-scss-module__yPCSua__cta.Menu-module-scss-module__yPCSua__solid {
+  color: #000;
+  background: #fff;
+  border: none;
+}
+
+.Menu-module-scss-module__yPCSua__cta.Menu-module-scss-module__yPCSua__solid:hover {
+  background: #eee;
+  transform: translateY(-2px);
+}
+
+.Menu-module-scss-module__yPCSua__cta.Menu-module-scss-module__yPCSua__outlined {
+  color: #fff;
+  background: none;
+  border: 2px solid #fff;
+}
+
+.Menu-module-scss-module__yPCSua__cta.Menu-module-scss-module__yPCSua__outlined:hover {
+  background: #ffffff1a;
+  transform: translateY(-2px);
+}
+
+.Menu-module-scss-module__yPCSua__posterWrapper {
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+}
+
+@media (width <= 640px) {
+  .Menu-module-scss-module__yPCSua__posterWrapper {
+    z-index: 0;
+    position: absolute;
+    inset: 0;
+  }
+}
+
+.Menu-module-scss-module__yPCSua__posterImage {
+  object-fit: cover;
+  object-position: right center;
+  width: auto;
+  height: 100vh;
+}
+
+@media (width <= 640px) {
+  .Menu-module-scss-module__yPCSua__posterImage {
+    object-fit: cover;
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+/* [project]/src/components/ui/Headline.module.scss.module.css [app-client] (css) */
+.Headline-module-scss-module__zt-2ea__headlineWrapper {
+  width: 100%;
+  padding: clamp(1.5rem, 5vw, 4rem);
+}
+
+.Headline-module-scss-module__zt-2ea__headlinePrimary {
+  font-family: var(--font-inter);
+  white-space: pre-wrap;
+  color: #fff;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .8rem;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  display: flex;
+}
+
+.Headline-module-scss-module__zt-2ea__lineTop {
+  width: 100%;
+  min-height: 3.6rem;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.Headline-module-scss-module__zt-2ea__lineBottom {
+  min-height: 6.6rem;
+  font-family: var(--font-cormorant);
+  width: 100%;
+  font-size: 6rem;
+  line-height: 1.1;
+}
+
+@media (width <= 640px) {
+  .Headline-module-scss-module__zt-2ea__lineBottom {
+    font-size: 4rem;
+  }
+}
+
+
+/* [project]/src/components/portfolio/ProjectCard.module.scss.module.css [app-client] (css) */
+.ProjectCard-module-scss-module__tHGz8a__card {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 640px;
+  margin: 2rem auto;
+  display: flex;
+}
+
+.ProjectCard-module-scss-module__tHGz8a__videoWrapper {
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.ProjectCard-module-scss-module__tHGz8a__video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.ProjectCard-module-scss-module__tHGz8a__logo {
+  opacity: .9;
+  max-width: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ProjectCard-module-scss-module__tHGz8a__textContent {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.ProjectCard-module-scss-module__tHGz8a__title {
+  font-family: var(--font-inter);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.ProjectCard-module-scss-module__tHGz8a__description {
+  font-family: var(--font-inter);
+  color: #ccc;
+  max-width: 480px;
+  margin: .5rem auto 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+/*# sourceMappingURL=src_components_2a7c9c0d._.css.map*/
