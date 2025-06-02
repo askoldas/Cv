@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/portfolio/portfolio.module.scss.module.css"],"sourcesContent":[".container{color:#fff;min-height:100vh;padding-top:64px;padding-inline:1rem;display:flex;flex-direction:column;gap:3rem;overflow-x:hidden}.header{width:100%}.projects{display:flex;flex-direction:column;align-items:center;gap:3rem;width:100%}.projectCard{display:flex;flex-direction:column;align-items:center;gap:1rem;text-align:center;width:100%}.projectCard video{width:100%;max-width:900px;border-radius:2rem;object-fit:cover}.projectCard img{height:60px;width:auto;margin-top:-2.5rem}.projectCard p{font-family:var(--font-inter);font-size:1.2rem;font-weight:500;color:#fff;max-width:600px}"],"names":[],"mappings":"AAAA;;;;;;;;;;;AAA0I;;;;AAAmB;;;;;;;;AAAoF;;;;;;;;;AAAyG;;;;;;;AAAkF;;;;;;AAA2D"}}]
-}

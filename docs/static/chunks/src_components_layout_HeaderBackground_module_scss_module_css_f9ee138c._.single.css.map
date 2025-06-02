@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/layout/HeaderBackground.module.scss.module.css"],"sourcesContent":[".videoWrapper{position:absolute;top:0;left:0;width:100%;height:400px;overflow:hidden;z-index:-1}.videoWrapper::after{content:\"\";position:absolute;bottom:0;left:0;width:100%;height:250px;background:linear-gradient(to bottom, transparent, black);pointer-events:none;z-index:2}.videoBackground{width:100%;height:100%;object-fit:cover;pointer-events:none;opacity:.4}.leftFade{position:absolute;top:0;left:0;width:300px;height:100%;background:linear-gradient(to right, black, transparent);pointer-events:none;z-index:2}"],"names":[],"mappings":"AAAA;;;;;;;;;;AAAgG;;;;;;;;;;;;AAAkL;;;;;;;;AAAwF"}}]
-}
