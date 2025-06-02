@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/contact/contact.module.scss.module.css"],"sourcesContent":[".container{background-color:#000;color:#fff;min-height:100vh;padding-top:64px;padding-inline:1rem;display:flex;flex-direction:column;gap:3rem}.header{width:100%}.content{display:flex;max-width:1000px;margin:0 auto;gap:4rem;padding-bottom:6rem}@media(max-width: 768px){.content{flex-direction:column}}.content .left{flex:1}.content .left h3{font-size:1.4rem;font-weight:600;margin-bottom:1rem}.content .left p{color:#ccc;font-size:1.05rem;line-height:1.7}.content .right{flex:2}.contactLinks{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}.contactLinks a{background:#111;border:1px solid #333;color:#fff;padding:.5rem 1rem;font-size:.95rem;border-radius:6px;text-decoration:none;transition:all .2s ease}.contactLinks a:hover{border-color:#fff;background:#222}"],"names":[],"mappings":"AAAA;;;;;;;;;;;AAA8I;;;;AAAmB;;;;;;;;AAAkF;EAAyB;;;;;AAAgC;;;;AAAsB;;;;;;AAAsE;;;;;;AAA8D;;;;AAAuB;;;;;;;AAAuE;;;;;;;;;;;AAAoK"}}]
-}
