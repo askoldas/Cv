@@ -101,6 +101,7 @@
 .Menu-module-scss-module__yPCSua__lineBottom {
   min-height: 6.6rem;
   font-family: var(--font-cormorant);
+  color: #f0c332;
   width: 100%;
   font-size: 6rem;
   line-height: 1.1;
@@ -141,7 +142,7 @@
 
 .Menu-module-scss-module__yPCSua__cta.Menu-module-scss-module__yPCSua__solid {
   color: #000;
-  background: #fff;
+  background: #f0c332;
   border: none;
 }
 
@@ -171,9 +172,13 @@
 
 @media (width <= 640px) {
   .Menu-module-scss-module__yPCSua__posterWrapper {
-    z-index: 0;
+    z-index: 1;
+    pointer-events: none;
+    width: 90%;
+    height: auto;
     position: absolute;
-    inset: 0;
+    top: 4rem;
+    right: 0;
   }
 }
 
@@ -186,10 +191,12 @@
 
 @media (width <= 640px) {
   .Menu-module-scss-module__yPCSua__posterImage {
-    object-fit: cover;
-    opacity: .8;
+    object-fit: contain;
+    object-position: right center;
+    opacity: .9;
     width: 100%;
-    height: 100%;
+    height: auto;
+    max-height: 85vh;
   }
 }
 
