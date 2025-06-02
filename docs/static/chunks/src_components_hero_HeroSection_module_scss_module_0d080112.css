@@ -127,6 +127,7 @@
 
 .HeroSection-module-scss-module__S9Gu7W__wordHighlight {
   font-family: var(--font-cormorant);
+  color: #f0c332;
   font-size: 6rem;
   line-height: 1.1;
   display: inline-block;
@@ -174,7 +175,7 @@
 
 .HeroSection-module-scss-module__S9Gu7W__cta.HeroSection-module-scss-module__S9Gu7W__solid {
   color: #000;
-  background: #fff;
+  background: #f0c332;
   border: none;
 }
 

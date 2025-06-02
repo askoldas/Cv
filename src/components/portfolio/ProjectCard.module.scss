@@ -12,16 +12,30 @@
   position: relative;
   width: 100%;
   max-width: 960px;
-  aspect-ratio: 16 / 9;
+  height: 540px; // maintain height regardless of screen width
   overflow: hidden;
   border-radius: 1.5rem;
+  background: black;
 }
 
 .video {
-  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   height: 100%;
+  width: auto;
+  transform: translate(-50%, -50%);
   object-fit: cover;
-  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: black;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .logo {
@@ -31,27 +45,38 @@
   transform: translate(-50%, -50%);
   max-width: 400px;
   max-height: 200px;
-  opacity: 0.9;
+  opacity: 0;
   pointer-events: none;
+  transition: opacity 0.5s ease;
+  z-index: 2;
 }
 
 .textContent {
   margin-top: 1.5rem;
-  text-align: center;
-  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 960px;
+  width: 100%;
+  text-align: left;
+  flex-wrap: wrap;
 }
 
 .title {
   font-family: var(--font-inter);
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: white;
+  flex: 1 1 30%;
+  min-width: 200px;
 }
 
 .description {
   font-family: var(--font-inter);
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.6;
   color: #ccc;
-  margin-top: 0.5rem;
+  flex: 1 1 65%;
+  min-width: 250px;
 }

@@ -19,6 +19,8 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   const videoRef = useRef<HTMLVideoElement>(null)
   const cardRef = useRef<HTMLDivElement>(null)
+  const overlayRef = useRef<HTMLDivElement>(null)
+  const logoRef = useRef<HTMLImageElement>(null)
   const rafId = useRef<number | null>(null)
 
   const [isInView, setIsInView] = useState(false)
@@ -43,54 +45,39 @@ export default function ProjectCard({
           })
         }
       },
-      {
-        threshold: 0.5
-      }
+      { threshold: 0.5 }
     )
 
-    if (cardRef.current) {
-      observer.observe(cardRef.current)
-    }
-
+    if (cardRef.current) observer.observe(cardRef.current)
     return () => {
       if (cardRef.current) observer.unobserve(cardRef.current)
     }
   }, [])
 
   useEffect(() => {
-    const video = videoRef.current
-    if (!video) return
+  const video = videoRef.current
+  const overlay = overlayRef.current
+  const logo = logoRef.current
+  if (!video || !overlay || !logo) return
 
-    const slowdownCheck = () => {
-      const { currentTime, duration } = video
+  if (isInView) {
+    video.currentTime = 0
+    video.playbackRate = 1
+    video.play().catch(() => {})
 
-      if (duration && currentTime >= duration * 0.85) {
-        const progress = (currentTime - duration * 0.85) / (duration * 0.15)
-        const eased = 1 - (3 * progress ** 2 - 2 * progress ** 3) // smoothstep
-        video.playbackRate = Math.max(0.5, eased)
-      } else {
-        video.playbackRate = 1
-      }
+    // Show overlay and logo right away
+    gsap.to(overlay, { opacity: 0.6, duration: 0.5, ease: 'power2.out' })
+    gsap.to(logo, { opacity: 1, duration: 0.5, ease: 'power2.out' })
+  } else {
+    video.pause()
+    video.currentTime = 0
+    video.playbackRate = 1
 
-      rafId.current = requestAnimationFrame(slowdownCheck)
-    }
-
-    if (isInView) {
-      video.currentTime = 0
-      video.playbackRate = 1
-      video.play().catch(() => {})
-      rafId.current = requestAnimationFrame(slowdownCheck)
-    } else {
-      video.pause()
-      video.currentTime = 0
-      video.playbackRate = 1
-      if (rafId.current) cancelAnimationFrame(rafId.current)
-    }
-
-    return () => {
-      if (rafId.current) cancelAnimationFrame(rafId.current)
-    }
-  }, [isInView])
+    // Hide them instantly or with fade out
+    gsap.to(overlay, { opacity: 0, duration: 0.3 })
+    gsap.to(logo, { opacity: 0, duration: 0.3 })
+  }
+}, [isInView])
 
   return (
     <div className={styles.card} ref={cardRef}>
@@ -103,7 +90,8 @@ export default function ProjectCard({
           preload="auto"
           className={styles.video}
         />
-        <img src={logoSrc} alt={title} className={styles.logo} />
+        <div className={styles.overlay} ref={overlayRef} />
+        <img src={logoSrc} alt={title} className={styles.logo} ref={logoRef} />
       </div>
       <div className={styles.textContent}>
         <h3 className={styles.title}>{title}</h3>

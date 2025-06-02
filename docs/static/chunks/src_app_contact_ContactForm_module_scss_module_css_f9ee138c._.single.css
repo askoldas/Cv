@@ -1,0 +1,71 @@
+/* [project]/src/app/contact/ContactForm.module.scss.module.css [app-client] (css) */
+.ContactForm-module-scss-module__Aqc14a__formWrapper {
+  flex-direction: column;
+  gap: 2rem;
+  display: flex;
+}
+
+.ContactForm-module-scss-module__Aqc14a__formWrapper .ContactForm-module-scss-module__Aqc14a__form {
+  flex-direction: column;
+  gap: 1rem;
+  display: flex;
+}
+
+.ContactForm-module-scss-module__Aqc14a__formWrapper .ContactForm-module-scss-module__Aqc14a__form input, .ContactForm-module-scss-module__Aqc14a__formWrapper .ContactForm-module-scss-module__Aqc14a__form textarea {
+  color: #fff;
+  resize: vertical;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: .75rem 1rem;
+  font-size: 1rem;
+}
+
+.ContactForm-module-scss-module__Aqc14a__formWrapper .ContactForm-module-scss-module__Aqc14a__form input:focus, .ContactForm-module-scss-module__Aqc14a__formWrapper .ContactForm-module-scss-module__Aqc14a__form textarea:focus {
+  border-color: #fff;
+  outline: none;
+}
+
+.ContactForm-module-scss-module__Aqc14a__formWrapper .ContactForm-module-scss-module__Aqc14a__form button {
+  color: #000;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: .75rem 1.5rem;
+  font-weight: 600;
+  transition: background .3s;
+}
+
+.ContactForm-module-scss-module__Aqc14a__formWrapper .ContactForm-module-scss-module__Aqc14a__form button:hover {
+  background: #ccc;
+}
+
+.ContactForm-module-scss-module__Aqc14a__formWrapper .ContactForm-module-scss-module__Aqc14a__form button:disabled {
+  cursor: not-allowed;
+  background: #666;
+}
+
+.ContactForm-module-scss-module__Aqc14a__formWrapper .ContactForm-module-scss-module__Aqc14a__actions {
+  flex-wrap: wrap;
+  gap: 1rem;
+  display: flex;
+}
+
+.ContactForm-module-scss-module__Aqc14a__formWrapper .ContactForm-module-scss-module__Aqc14a__actions a {
+  color: #fff;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: .6rem 1rem;
+  font-size: .95rem;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.ContactForm-module-scss-module__Aqc14a__formWrapper .ContactForm-module-scss-module__Aqc14a__actions a:hover {
+  background: #222;
+  border-color: #fff;
+}
+
+/*# sourceMappingURL=src_app_contact_ContactForm_module_scss_module_css_f9ee138c._.single.css.map*/

@@ -126,6 +126,7 @@
   font-size: 6rem;
   line-height: 1.1;
   display: inline-block;
+  color: rgb(240, 195, 50);
 
   @media (max-width: 640px) {
     font-size: 4rem;
@@ -170,7 +171,7 @@
 }
 
 .cta.solid {
-  background: white;
+  background: rgb(240, 195, 50);
   color: black;
   border: none;
 }
