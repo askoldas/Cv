@@ -33,7 +33,7 @@ export default function PortfolioPage() {
             description="Developed a complete branding package with logo and packaging design. Delivered the website concept and built the online store on WordPress, creating a cohesive and user-focused shopping experience."
           />
           <ProjectCard
-            videoSrc={`${BASE_PATH}/videos/rubenrub.mp4`}
+            videoSrc={`${BASE_PATH}/videos/Rubenrub.mp4`}
             logoSrc={`${BASE_PATH}/logos/rubinrub.svg`}
             title="RubinRub"
             description="Created a range of branding and marketing assets, including visuals for social media and promotions. Designed and developed the WordPress website, providing both visual direction and original copy to reflect the café’s identity."
