@@ -1,0 +1,74 @@
+/* [project]/src/components/sections/ContactSection.module.scss.module.css [app-client] (css) */
+.ContactSection-module-scss-module__K9N5bG__container {
+  color: #fff;
+  padding-top: 64px;
+  background-color: #000;
+  flex-direction: column;
+  gap: 3rem;
+  min-height: 100vh;
+  padding-inline: 1rem;
+  display: flex;
+}
+
+.ContactSection-module-scss-module__K9N5bG__header {
+  width: 100%;
+}
+
+.ContactSection-module-scss-module__K9N5bG__content {
+  gap: 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 6rem;
+  display: flex;
+}
+
+@media (width <= 768px) {
+  .ContactSection-module-scss-module__K9N5bG__content {
+    flex-direction: column;
+  }
+}
+
+.ContactSection-module-scss-module__K9N5bG__content .ContactSection-module-scss-module__K9N5bG__left {
+  flex: 1;
+}
+
+.ContactSection-module-scss-module__K9N5bG__content .ContactSection-module-scss-module__K9N5bG__left h3 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.ContactSection-module-scss-module__K9N5bG__content .ContactSection-module-scss-module__K9N5bG__left p {
+  color: #ccc;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.ContactSection-module-scss-module__K9N5bG__content .ContactSection-module-scss-module__K9N5bG__right {
+  flex: 2;
+}
+
+.ContactSection-module-scss-module__K9N5bG__contactLinks {
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.ContactSection-module-scss-module__K9N5bG__contactLinks a {
+  color: #fff;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: .5rem 1rem;
+  font-size: .95rem;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.ContactSection-module-scss-module__K9N5bG__contactLinks a:hover {
+  background: #222;
+  border-color: #fff;
+}
+
+/*# sourceMappingURL=src_components_sections_ContactSection_module_scss_module_css_f9ee138c._.single.css.map*/

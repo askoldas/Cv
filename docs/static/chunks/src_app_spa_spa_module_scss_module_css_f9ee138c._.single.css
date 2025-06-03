@@ -1,0 +1,35 @@
+/* [project]/src/app/spa/spa.module.scss.module.css [app-client] (css) */
+.spa-module-scss-module__ad2LJW__pageWrapper {
+  scroll-behavior: smooth;
+}
+
+.spa-module-scss-module__ad2LJW__section {
+  background: #f2f2f2;
+  border-top: 1px solid #ccc;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 2rem;
+  display: flex;
+}
+
+.spa-module-scss-module__ad2LJW__contentWrapper {
+  transition: opacity .5s, visibility .5s;
+}
+
+.spa-module-scss-module__ad2LJW__contentWrapper.spa-module-scss-module__ad2LJW__hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+}
+
+.spa-module-scss-module__ad2LJW__contentWrapper.spa-module-scss-module__ad2LJW__visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  height: auto;
+}
+
+/*# sourceMappingURL=src_app_spa_spa_module_scss_module_css_f9ee138c._.single.css.map*/

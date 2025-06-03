@@ -1,0 +1,43 @@
+/* [project]/src/components/layout/HeaderBackground.module.scss.module.css [app-client] (css) */
+.HeaderBackground-module-scss-module__XRk5Pq__videoWrapper {
+  z-index: -1;
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.HeaderBackground-module-scss-module__XRk5Pq__videoWrapper:after {
+  content: "";
+  pointer-events: none;
+  z-index: 2;
+  background: linear-gradient(#0000, #000);
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.HeaderBackground-module-scss-module__XRk5Pq__videoBackground {
+  object-fit: cover;
+  pointer-events: none;
+  opacity: .4;
+  width: 100%;
+  height: 100%;
+}
+
+.HeaderBackground-module-scss-module__XRk5Pq__leftFade {
+  pointer-events: none;
+  z-index: 2;
+  background: linear-gradient(to right, #000, #0000);
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=src_components_layout_HeaderBackground_module_scss_module_css_f9ee138c._.single.css.map*/

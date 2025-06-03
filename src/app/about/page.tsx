@@ -77,7 +77,7 @@ export default function AboutPage() {
     {
       number: '00',
       title: '📐 Strategy & Structure',
-      description: `Every great project begins with listening...`,
+      description: `Every great project begins with listening. I collaborate closely with clients to understand business goals, user needs, and creative vision. Beyond discovery, I plan the digital architecture — designing content structures, data flow, and functionality with clarity and intent.`,
       tools: ['Notion', 'ClickUp', 'Asana', 'Jira', 'Miro'],
     },
     {
@@ -85,7 +85,7 @@ export default function AboutPage() {
       emoji: '🎨',
       title: 'Design & Creative',
       description:
-        'Visual expression is at the heart of everything I build...',
+        'Visual expression is at the heart of everything I build. I work fluently across industry-standard tools to craft intuitive, aesthetic, and meaningful digital experiences — from branding and layout to motion and presentation.',
       tools: ['Photoshop', 'Illustrator', 'InDesign', 'After Effects', 'SketchUp'],
     },
     {
@@ -93,7 +93,7 @@ export default function AboutPage() {
       emoji: '🧪',
       title: 'UI/UX & Prototyping',
       description:
-        "I prototype with purpose — validating ideas through wireframes...",
+        "I prototype with purpose — validating ideas through wireframes, flows, and interactive mockups. Whether it's early low-fidelity sketching or polished UI systems, I choose the right fidelity for each phase.",
       tools: ['Figma', 'Adobe XD', 'Axure RP', 'Balsamiq'],
     },
     {
@@ -101,7 +101,7 @@ export default function AboutPage() {
       emoji: '💻',
       title: 'Frontend Development',
       description:
-        'My front-end work bridges visuals and interaction...',
+        'My front-end work bridges visuals and interaction. I develop responsive, accessible, and performant UIs using modern frameworks — enhancing them with animations and a focus on clean, maintainable code.',
       tools: ['HTML', 'CSS', 'Sass', 'JavaScript', 'GSAP', 'React.js', 'Next.js', 'VS Code'],
     },
     {
@@ -109,7 +109,7 @@ export default function AboutPage() {
       emoji: '🛒',
       title: 'Web Platforms & CMS',
       description:
-        'I integrate design and development within powerful content and commerce platforms...',
+        'I integrate design and development within powerful content and commerce platforms. From headless solutions to CMS-based builds, I deliver sites that are editable, scalable, and client-friendly.',
       tools: ['WordPress', 'WooCommerce', 'Shopify', 'OpenCart', 'Firebase'],
     },
     {
@@ -117,7 +117,7 @@ export default function AboutPage() {
       emoji: '🤖',
       title: 'AI Powered',
       description:
-        'I work hand-in-hand with a growing ecosystem of AI tools...',
+        'I work hand-in-hand with a growing ecosystem of AI tools — from design ideation to code generation and content workflows. This supercharges creativity, speed, and quality across every phase of the process.',
       tools: ['ChatGPT', 'Midjourney', 'Adobe Firefly', 'Sora', 'DeepSeek', 'Krea'],
     },
   ]

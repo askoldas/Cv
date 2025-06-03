@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/spa/spa.module.scss.module.css"],"sourcesContent":[".pageWrapper{scroll-behavior:smooth}.section{min-height:100vh;display:flex;align-items:center;justify-content:center;font-size:2rem;background:#f2f2f2;border-top:1px solid #ccc}.contentWrapper{transition:opacity .5s ease,visibility .5s ease}.contentWrapper.hidden{opacity:0;visibility:hidden;height:0;overflow:hidden;pointer-events:none}.contentWrapper.visible{opacity:1;visibility:visible;height:auto;pointer-events:auto}"],"names":[],"mappings":"AAAA;;;;AAAoC;;;;;;;;;;AAA6I;;;;AAAgE;;;;;;;;AAAgG"}}]
+}

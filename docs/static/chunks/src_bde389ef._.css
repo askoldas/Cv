@@ -1,0 +1,876 @@
+/* [project]/src/components/hero/HeroSection.module.scss.module.css [app-client] (css) */
+.HeroSection-module-scss-module__S9Gu7W__container {
+  height: 205vh;
+  position: relative;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__heroInner {
+  color: #fff;
+  background: #000;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+@media (width <= 640px) {
+  .HeroSection-module-scss-module__S9Gu7W__heroInner {
+    flex-direction: column;
+  }
+}
+
+.HeroSection-module-scss-module__S9Gu7W__leftText {
+  z-index: 10;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100vh;
+  padding: clamp(1.5rem, 5vw, 4rem);
+  display: flex;
+}
+
+@media (width <= 640px) {
+  .HeroSection-module-scss-module__S9Gu7W__leftText {
+    z-index: 1;
+    text-align: left;
+    align-items: flex-start;
+    min-width: 100%;
+    position: relative;
+  }
+}
+
+.HeroSection-module-scss-module__S9Gu7W__headlineWrapper {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__blockWrapper {
+  width: 100%;
+  min-height: 220px;
+  margin-top: auto;
+  position: relative;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__introBlock, .HeroSection-module-scss-module__S9Gu7W__outroBlock {
+  opacity: 0;
+  z-index: 0;
+  pointer-events: none;
+  width: 100%;
+  transition: opacity .4s;
+}
+
+@media (width <= 640px) {
+  .HeroSection-module-scss-module__S9Gu7W__introBlock, .HeroSection-module-scss-module__S9Gu7W__outroBlock {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.HeroSection-module-scss-module__S9Gu7W__rightVideo {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+}
+
+@media (width <= 640px) {
+  .HeroSection-module-scss-module__S9Gu7W__rightVideo {
+    z-index: 0;
+    position: absolute;
+    inset: 0;
+  }
+}
+
+.HeroSection-module-scss-module__S9Gu7W__video {
+  object-fit: cover;
+  width: auto;
+  height: 100vh;
+}
+
+@media (width <= 640px) {
+  .HeroSection-module-scss-module__S9Gu7W__video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.HeroSection-module-scss-module__S9Gu7W__headlinePrimary {
+  font-family: var(--font-inter);
+  white-space: pre-wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .8rem;
+  height: 11rem;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  display: flex;
+  position: relative;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__lineTop {
+  width: 100%;
+  min-height: 3.6rem;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__lineBottom {
+  width: 100%;
+  min-height: 6.6rem;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__wordHighlight {
+  font-family: var(--font-cormorant);
+  color: #f0c332;
+  font-size: 6rem;
+  line-height: 1.1;
+  display: inline-block;
+}
+
+@media (width <= 640px) {
+  .HeroSection-module-scss-module__S9Gu7W__wordHighlight {
+    font-size: 4rem;
+  }
+}
+
+.HeroSection-module-scss-module__S9Gu7W__headlineSecondary {
+  font-family: var(--font-inter);
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__introParagraph, .HeroSection-module-scss-module__S9Gu7W__outroParagraph {
+  font-family: var(--font-inter);
+  max-width: 600px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__ctaButtons {
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__cta {
+  font-family: var(--font-inter);
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .2s;
+  display: inline-block;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__cta.HeroSection-module-scss-module__S9Gu7W__solid {
+  color: #000;
+  background: #f0c332;
+  border: none;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__cta.HeroSection-module-scss-module__S9Gu7W__solid:hover {
+  background: #eee;
+  transform: translateY(-2px);
+}
+
+.HeroSection-module-scss-module__S9Gu7W__cta.HeroSection-module-scss-module__S9Gu7W__outlined {
+  color: #fff;
+  background: none;
+  border: 2px solid #fff;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__cta.HeroSection-module-scss-module__S9Gu7W__outlined:hover {
+  background: #ffffff1a;
+  transform: translateY(-2px);
+}
+
+.HeroSection-module-scss-module__S9Gu7W__cursor {
+  background-color: currentColor;
+  width: 1px;
+  height: 1em;
+  margin-left: 2px;
+  animation: 1s step-end infinite HeroSection-module-scss-module__S9Gu7W__blink;
+  display: inline-block;
+}
+
+@keyframes HeroSection-module-scss-module__S9Gu7W__blink {
+  0%, 50% {
+    opacity: 1;
+  }
+
+  50.01%, 100% {
+    opacity: 0;
+  }
+}
+
+
+/* [project]/src/components/ui/Headline.module.scss.module.css [app-client] (css) */
+.Headline-module-scss-module__zt-2ea__headlineWrapper {
+  width: 100%;
+  padding: clamp(1.5rem, 5vw, 4rem);
+}
+
+.Headline-module-scss-module__zt-2ea__headlinePrimary {
+  font-family: var(--font-inter);
+  white-space: pre-wrap;
+  color: #fff;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .8rem;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  display: flex;
+}
+
+.Headline-module-scss-module__zt-2ea__lineTop {
+  width: 100%;
+  min-height: 3.6rem;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.Headline-module-scss-module__zt-2ea__lineBottom {
+  min-height: 6.6rem;
+  font-family: var(--font-cormorant);
+  width: 100%;
+  font-size: 6rem;
+  line-height: 1.1;
+}
+
+@media (width <= 640px) {
+  .Headline-module-scss-module__zt-2ea__lineBottom {
+    font-size: 4rem;
+  }
+}
+
+
+/* [project]/src/components/portfolio/ProjectCard.module.scss.module.css [app-client] (css) */
+.ProjectCard-module-scss-module__tHGz8a__card {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem 0;
+  padding-inline: 1rem;
+  display: flex;
+}
+
+.ProjectCard-module-scss-module__tHGz8a__videoWrapper {
+  background: #000;
+  border-radius: 1.5rem;
+  width: 100%;
+  max-width: 960px;
+  height: 540px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ProjectCard-module-scss-module__tHGz8a__video {
+  object-fit: cover;
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ProjectCard-module-scss-module__tHGz8a__overlay {
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+  background: #000;
+  transition: opacity .5s;
+  position: absolute;
+  inset: 0;
+}
+
+.ProjectCard-module-scss-module__tHGz8a__logo {
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+  max-width: 400px;
+  max-height: 200px;
+  transition: opacity .5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ProjectCard-module-scss-module__tHGz8a__textContent {
+  text-align: left;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+  max-width: 960px;
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.ProjectCard-module-scss-module__tHGz8a__title {
+  font-family: var(--font-inter);
+  color: #fff;
+  flex: 30%;
+  min-width: 200px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.ProjectCard-module-scss-module__tHGz8a__description {
+  font-family: var(--font-inter);
+  color: #ccc;
+  flex: 65%;
+  min-width: 250px;
+  font-size: .95rem;
+  line-height: 1.6;
+}
+
+
+/* [project]/src/components/sections/PortfolioSection.module.scss.module.css [app-client] (css) */
+.PortfolioSection-module-scss-module__efQlrq__container {
+  color: #fff;
+  padding-top: 64px;
+  flex-direction: column;
+  gap: 3rem;
+  min-height: 100vh;
+  padding-inline: 1rem;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.PortfolioSection-module-scss-module__efQlrq__header {
+  width: 100%;
+}
+
+.PortfolioSection-module-scss-module__efQlrq__projects {
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  display: flex;
+}
+
+.PortfolioSection-module-scss-module__efQlrq__projectCard {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  display: flex;
+}
+
+.PortfolioSection-module-scss-module__efQlrq__projectCard video {
+  object-fit: cover;
+  border-radius: 2rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+.PortfolioSection-module-scss-module__efQlrq__projectCard img {
+  width: auto;
+  height: 60px;
+  margin-top: -2.5rem;
+}
+
+.PortfolioSection-module-scss-module__efQlrq__projectCard p {
+  font-family: var(--font-inter);
+  color: #fff;
+  max-width: 600px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+
+/* [project]/src/components/sections/ResumeSection.module.scss.module.css [app-client] (css) */
+.ResumeSection-module-scss-module__oYUuGW__container {
+  color: #fff;
+  padding-top: 64px;
+  flex-direction: column;
+  gap: 3rem;
+  min-height: 100vh;
+  padding-inline: 1rem;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__header {
+  width: 100%;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__videoWrapper {
+  z-index: -1;
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__videoWrapper:after {
+  content: "";
+  pointer-events: none;
+  z-index: 2;
+  background: linear-gradient(#0000, #000);
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__videoBackground {
+  object-fit: cover;
+  pointer-events: none;
+  opacity: .4;
+  width: 100%;
+  height: 100%;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__aboutSection {
+  text-align: center;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 4rem auto 3rem;
+  display: flex;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__aboutSection h2 {
+  color: #f0c332;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__aboutSection p {
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__aboutMeBlock {
+  align-items: flex-start;
+  gap: 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  display: flex;
+}
+
+@media (width <= 768px) {
+  .ResumeSection-module-scss-module__oYUuGW__aboutMeBlock {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.ResumeSection-module-scss-module__oYUuGW__aboutMeBlock .ResumeSection-module-scss-module__oYUuGW__left {
+  flex: none;
+  width: fit-content;
+  min-width: 120px;
+  max-width: 160px;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__aboutMeBlock .ResumeSection-module-scss-module__oYUuGW__left h3 {
+  color: #fff;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__aboutMeBlock .ResumeSection-module-scss-module__oYUuGW__right {
+  color: #ccc;
+  flex-direction: column;
+  flex: 1;
+  gap: 1.2rem;
+  display: flex;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__aboutMeBlock .ResumeSection-module-scss-module__oYUuGW__right p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__aboutMeBlock .ResumeSection-module-scss-module__oYUuGW__right ul {
+  flex-direction: column;
+  gap: .4rem;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  display: flex;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__aboutMeBlock .ResumeSection-module-scss-module__oYUuGW__right ul li {
+  line-height: 1.6;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__processSection {
+  flex-direction: column;
+  gap: 6rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 6rem;
+  display: flex;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__step {
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 220px;
+  display: flex;
+  position: relative;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__leftRight {
+  opacity: 0;
+  will-change: transform, opacity;
+  justify-content: space-between;
+  gap: 2rem;
+  display: flex;
+  transform: translateY(40px);
+}
+
+@media (width <= 768px) {
+  .ResumeSection-module-scss-module__oYUuGW__leftRight {
+    flex-direction: column;
+  }
+}
+
+.ResumeSection-module-scss-module__oYUuGW__left {
+  flex: 1;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__left .ResumeSection-module-scss-module__oYUuGW__stepNumber {
+  color: #888;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__left .ResumeSection-module-scss-module__oYUuGW__stepTitle {
+  margin-top: .3rem;
+  font-size: 1.5rem;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__left .ResumeSection-module-scss-module__oYUuGW__stepDescription {
+  color: #bbb;
+  margin-top: .8rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__right {
+  flex: 1;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__right .ResumeSection-module-scss-module__oYUuGW__toolGrid {
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: .5rem;
+  display: flex;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__right .ResumeSection-module-scss-module__oYUuGW__toolGrid span {
+  color: #000;
+  background: #fff;
+  border-radius: 999px;
+  padding: .4rem .8rem;
+  font-size: .85rem;
+  font-weight: 500;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__middle {
+  pointer-events: none;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ResumeSection-module-scss-module__oYUuGW__middle .ResumeSection-module-scss-module__oYUuGW__dot {
+  background-color: #0000;
+  border: 2px solid #fff6;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  transition: background-color .3s, border-color .3s;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__middle .ResumeSection-module-scss-module__oYUuGW__dot.ResumeSection-module-scss-module__oYUuGW__active {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__middle .ResumeSection-module-scss-module__oYUuGW__line {
+  background-color: #fff3;
+  flex-grow: 1;
+  width: 2px;
+  margin-top: .5rem;
+}
+
+@media (width <= 768px) {
+  .ResumeSection-module-scss-module__oYUuGW__middle {
+    display: none;
+  }
+}
+
+.ResumeSection-module-scss-module__oYUuGW__deliverySection {
+  text-align: center;
+  padding-bottom: 6rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-inline: 1rem;
+  display: flex;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__deliveryTitle {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__deliveryIntro {
+  color: #ccc;
+  max-width: 720px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__deliveryGrid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  margin-top: 2rem;
+  display: grid;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__deliveryCard {
+  text-align: left;
+  background-color: #111;
+  border: 1px solid #ffffff1a;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__deliveryCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px #0000004d;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__deliveryCard h4 {
+  color: #fff;
+  margin-bottom: .6rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__deliveryCard p {
+  color: #aaa;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+/* [project]/src/app/contact/ContactForm.module.scss.module.css [app-client] (css) */
+.ContactForm-module-scss-module__Aqc14a__formWrapper {
+  flex-direction: column;
+  gap: 2rem;
+  display: flex;
+}
+
+.ContactForm-module-scss-module__Aqc14a__formWrapper .ContactForm-module-scss-module__Aqc14a__form {
+  flex-direction: column;
+  gap: 1rem;
+  display: flex;
+}
+
+.ContactForm-module-scss-module__Aqc14a__formWrapper .ContactForm-module-scss-module__Aqc14a__form input, .ContactForm-module-scss-module__Aqc14a__formWrapper .ContactForm-module-scss-module__Aqc14a__form textarea {
+  color: #fff;
+  resize: vertical;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: .75rem 1rem;
+  font-size: 1rem;
+}
+
+.ContactForm-module-scss-module__Aqc14a__formWrapper .ContactForm-module-scss-module__Aqc14a__form input:focus, .ContactForm-module-scss-module__Aqc14a__formWrapper .ContactForm-module-scss-module__Aqc14a__form textarea:focus {
+  border-color: #fff;
+  outline: none;
+}
+
+.ContactForm-module-scss-module__Aqc14a__formWrapper .ContactForm-module-scss-module__Aqc14a__form button {
+  color: #000;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: .75rem 1.5rem;
+  font-weight: 600;
+  transition: background .3s;
+}
+
+.ContactForm-module-scss-module__Aqc14a__formWrapper .ContactForm-module-scss-module__Aqc14a__form button:hover {
+  background: #ccc;
+}
+
+.ContactForm-module-scss-module__Aqc14a__formWrapper .ContactForm-module-scss-module__Aqc14a__form button:disabled {
+  cursor: not-allowed;
+  background: #666;
+}
+
+.ContactForm-module-scss-module__Aqc14a__formWrapper .ContactForm-module-scss-module__Aqc14a__actions {
+  flex-wrap: wrap;
+  gap: 1rem;
+  display: flex;
+}
+
+.ContactForm-module-scss-module__Aqc14a__formWrapper .ContactForm-module-scss-module__Aqc14a__actions a {
+  color: #fff;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: .6rem 1rem;
+  font-size: .95rem;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.ContactForm-module-scss-module__Aqc14a__formWrapper .ContactForm-module-scss-module__Aqc14a__actions a:hover {
+  background: #222;
+  border-color: #fff;
+}
+
+
+/* [project]/src/components/sections/ContactSection.module.scss.module.css [app-client] (css) */
+.ContactSection-module-scss-module__K9N5bG__container {
+  color: #fff;
+  padding-top: 64px;
+  background-color: #000;
+  flex-direction: column;
+  gap: 3rem;
+  min-height: 100vh;
+  padding-inline: 1rem;
+  display: flex;
+}
+
+.ContactSection-module-scss-module__K9N5bG__header {
+  width: 100%;
+}
+
+.ContactSection-module-scss-module__K9N5bG__content {
+  gap: 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 6rem;
+  display: flex;
+}
+
+@media (width <= 768px) {
+  .ContactSection-module-scss-module__K9N5bG__content {
+    flex-direction: column;
+  }
+}
+
+.ContactSection-module-scss-module__K9N5bG__content .ContactSection-module-scss-module__K9N5bG__left {
+  flex: 1;
+}
+
+.ContactSection-module-scss-module__K9N5bG__content .ContactSection-module-scss-module__K9N5bG__left h3 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.ContactSection-module-scss-module__K9N5bG__content .ContactSection-module-scss-module__K9N5bG__left p {
+  color: #ccc;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.ContactSection-module-scss-module__K9N5bG__content .ContactSection-module-scss-module__K9N5bG__right {
+  flex: 2;
+}
+
+.ContactSection-module-scss-module__K9N5bG__contactLinks {
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.ContactSection-module-scss-module__K9N5bG__contactLinks a {
+  color: #fff;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: .5rem 1rem;
+  font-size: .95rem;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.ContactSection-module-scss-module__K9N5bG__contactLinks a:hover {
+  background: #222;
+  border-color: #fff;
+}
+
+
+/* [project]/src/app/spa/spa.module.scss.module.css [app-client] (css) */
+.spa-module-scss-module__ad2LJW__pageWrapper {
+  scroll-behavior: smooth;
+}
+
+.spa-module-scss-module__ad2LJW__section {
+  background: #f2f2f2;
+  border-top: 1px solid #ccc;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 2rem;
+  display: flex;
+}
+
+.spa-module-scss-module__ad2LJW__contentWrapper {
+  transition: opacity .5s, visibility .5s;
+}
+
+.spa-module-scss-module__ad2LJW__contentWrapper.spa-module-scss-module__ad2LJW__hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+}
+
+.spa-module-scss-module__ad2LJW__contentWrapper.spa-module-scss-module__ad2LJW__visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  height: auto;
+}
+
+
+/*# sourceMappingURL=src_bde389ef._.css.map*/

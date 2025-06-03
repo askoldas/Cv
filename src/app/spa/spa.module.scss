@@ -1,0 +1,33 @@
+.pageWrapper {
+  scroll-behavior: smooth;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  background: #f2f2f2;
+  border-top: 1px solid #ccc;
+}
+
+
+
+.contentWrapper {
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    pointer-events: auto;
+  }
+}

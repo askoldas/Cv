@@ -9,7 +9,25 @@ import HeroContentBlock from './HeroContentBlock'
 
 gsap.registerPlugin(ScrollTrigger)
 
-export default function HeroSection() {
+type HeroSectionProps = {
+  onUnlockScroll: () => void
+  onNav: (target: 'portfolio' | 'resume' | 'contact') => void
+}
+
+export default function HeroSection({ onUnlockScroll, onNav }: HeroSectionProps) {
+  const sectionRef = useRef<HTMLDivElement>(null)
+  const videoRef = useRef<HTMLVideoElement>(null)
+  const introBlockRef = useRef<HTMLDivElement>(null)
+  const outroBlockRef = useRef<HTMLDivElement>(null)
+
+  const introText = "Hello, I'm\nAskold."
+  const outroText = "Let's make your ideas\nVisible."
+
+  const [typedText, setTypedText] = useState('')
+  const [typingDone, setTypingDone] = useState(false)
+  const [showCursor, setShowCursor] = useState(true)
+  const [showNav, setShowNav] = useState(false)
+
   useEffect(() => {
     const setVh = () => {
       const vh = window.innerHeight * 0.01
@@ -25,18 +43,6 @@ export default function HeroSection() {
       window.removeEventListener('orientationchange', setVh)
     }
   }, [])
-
-  const sectionRef = useRef<HTMLDivElement>(null)
-  const videoRef = useRef<HTMLVideoElement>(null)
-  const introBlockRef = useRef<HTMLDivElement>(null)
-  const outroBlockRef = useRef<HTMLDivElement>(null)
-
-  const introText = "Hello, I'm\nAskold."
-  const outroText = "Let's make your ideas\nVisible."
-
-  const [typedText, setTypedText] = useState('')
-  const [typingDone, setTypingDone] = useState(false)
-  const [showCursor, setShowCursor] = useState(true)
 
   // Typing animation
   useEffect(() => {
@@ -54,7 +60,7 @@ export default function HeroSection() {
     return () => clearInterval(interval)
   }, [])
 
-  // Scroll-triggered text switch
+  // Text switch + nav reveal
   useEffect(() => {
     if (!typingDone || !sectionRef.current) return
 
@@ -80,13 +86,15 @@ export default function HeroSection() {
         } else {
           setTypedText(outroText)
         }
+
+        if (p > 0.95) setShowNav(true)
       }
     })
 
     return () => scroll.kill()
   }, [typingDone])
 
-  // Fade in/out blocks & set video time on scroll
+  // Fade content blocks + scroll video
   useEffect(() => {
     const section = sectionRef.current
     const video = videoRef.current
@@ -122,7 +130,6 @@ export default function HeroSection() {
       }
     })
 
-    // Optional: update video time once on scroll using ScrollTrigger
     ScrollTrigger.create({
       trigger: section,
       start: 'top top',
@@ -147,7 +154,12 @@ export default function HeroSection() {
           <div className={styles.headlineWrapper}>
             <HeroHeadline typedText={typedText} showCursor={showCursor} />
           </div>
-          <HeroContentBlock introRef={introBlockRef} outroRef={outroBlockRef} />
+          <HeroContentBlock
+            introRef={introBlockRef}
+            outroRef={outroBlockRef}
+            onUnlockScroll={onUnlockScroll}
+            onNav={onNav}
+          />
         </div>
 
         <div className={styles.rightVideo}>
@@ -161,6 +173,14 @@ export default function HeroSection() {
           />
         </div>
       </div>
+
+      {showNav && (
+        <div className={styles.navButtons}>
+          <button onClick={() => { onUnlockScroll(); onNav('portfolio') }}>Portfolio</button>
+          <button onClick={() => { onUnlockScroll(); onNav('resume') }}>Resume</button>
+          <button onClick={() => { onUnlockScroll(); onNav('contact') }}>Contact</button>
+        </div>
+      )}
     </section>
   )
 }

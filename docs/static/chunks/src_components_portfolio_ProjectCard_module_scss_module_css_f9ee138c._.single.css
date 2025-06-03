@@ -1,0 +1,85 @@
+/* [project]/src/components/portfolio/ProjectCard.module.scss.module.css [app-client] (css) */
+.ProjectCard-module-scss-module__tHGz8a__card {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem 0;
+  padding-inline: 1rem;
+  display: flex;
+}
+
+.ProjectCard-module-scss-module__tHGz8a__videoWrapper {
+  background: #000;
+  border-radius: 1.5rem;
+  width: 100%;
+  max-width: 960px;
+  height: 540px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ProjectCard-module-scss-module__tHGz8a__video {
+  object-fit: cover;
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ProjectCard-module-scss-module__tHGz8a__overlay {
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+  background: #000;
+  transition: opacity .5s;
+  position: absolute;
+  inset: 0;
+}
+
+.ProjectCard-module-scss-module__tHGz8a__logo {
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+  max-width: 400px;
+  max-height: 200px;
+  transition: opacity .5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ProjectCard-module-scss-module__tHGz8a__textContent {
+  text-align: left;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+  max-width: 960px;
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.ProjectCard-module-scss-module__tHGz8a__title {
+  font-family: var(--font-inter);
+  color: #fff;
+  flex: 30%;
+  min-width: 200px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.ProjectCard-module-scss-module__tHGz8a__description {
+  font-family: var(--font-inter);
+  color: #ccc;
+  flex: 65%;
+  min-width: 250px;
+  font-size: .95rem;
+  line-height: 1.6;
+}
+
+/*# sourceMappingURL=src_components_portfolio_ProjectCard_module_scss_module_css_f9ee138c._.single.css.map*/

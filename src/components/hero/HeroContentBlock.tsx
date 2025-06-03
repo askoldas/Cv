@@ -2,15 +2,20 @@
 
 import { RefObject } from 'react'
 import styles from './HeroSection.module.scss'
-import Link from 'next/link'
+
+type HeroContentBlockProps = {
+  introRef: RefObject<HTMLDivElement | null>
+  outroRef: RefObject<HTMLDivElement | null>
+  onUnlockScroll: () => void
+  onNav: (target: 'portfolio' | 'resume' | 'contact') => void
+}
 
 export default function HeroContentBlock({
   introRef,
   outroRef,
-}: {
-  introRef: RefObject<HTMLDivElement | null>
-  outroRef: RefObject<HTMLDivElement | null>
-}) {
+  onUnlockScroll,
+  onNav
+}: HeroContentBlockProps) {
   return (
     <div className={styles.blockWrapper}>
       <div ref={introRef} className={styles.introBlock}>
@@ -27,9 +32,38 @@ export default function HeroContentBlock({
           Let’s explore how I can help bring your next product or brand to life.
         </p>
         <div className={styles.ctaButtons}>
-          <Link href="/contact" className={`${styles.cta} ${styles.solid}`}>Get in Touch</Link>
-          <Link href="/portfolio" className={`${styles.cta} ${styles.outlined}`}>Projects</Link>
-          <Link href="/about" className={`${styles.cta} ${styles.outlined}`}>Resume</Link>
+          <button
+            type="button"
+            className={`${styles.cta} ${styles.solid}`}
+            onClick={() => {
+              onUnlockScroll()
+              onNav('contact')
+            }}
+          >
+            Get in Touch
+          </button>
+
+          <button
+            type="button"
+            className={`${styles.cta} ${styles.outlined}`}
+            onClick={() => {
+              onUnlockScroll()
+              onNav('portfolio')
+            }}
+          >
+            Projects
+          </button>
+
+          <button
+            type="button"
+            className={`${styles.cta} ${styles.outlined}`}
+            onClick={() => {
+              onUnlockScroll()
+              onNav('resume')
+            }}
+          >
+            Resume
+          </button>
         </div>
       </div>
     </div>

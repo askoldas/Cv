@@ -1,0 +1,55 @@
+/* [project]/src/components/sections/PortfolioSection.module.scss.module.css [app-client] (css) */
+.PortfolioSection-module-scss-module__efQlrq__container {
+  color: #fff;
+  padding-top: 64px;
+  flex-direction: column;
+  gap: 3rem;
+  min-height: 100vh;
+  padding-inline: 1rem;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.PortfolioSection-module-scss-module__efQlrq__header {
+  width: 100%;
+}
+
+.PortfolioSection-module-scss-module__efQlrq__projects {
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  display: flex;
+}
+
+.PortfolioSection-module-scss-module__efQlrq__projectCard {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  display: flex;
+}
+
+.PortfolioSection-module-scss-module__efQlrq__projectCard video {
+  object-fit: cover;
+  border-radius: 2rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+.PortfolioSection-module-scss-module__efQlrq__projectCard img {
+  width: auto;
+  height: 60px;
+  margin-top: -2.5rem;
+}
+
+.PortfolioSection-module-scss-module__efQlrq__projectCard p {
+  font-family: var(--font-inter);
+  color: #fff;
+  max-width: 600px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=src_components_sections_PortfolioSection_module_scss_module_css_f9ee138c._.single.css.map*/
