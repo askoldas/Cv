@@ -3,10 +3,10 @@
 import { useEffect, useRef } from 'react'
 import Headline from '@/components/ui/Headline'
 import styles from './ResumeSection.module.scss'
+import SectionHeader from '@/components/ui/SectionHeader'
+gsap.registerPlugin(ScrollTrigger)
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
-gsap.registerPlugin(ScrollTrigger)
 
 export default function ResumeSection() {
     const videoRef = useRef<HTMLVideoElement>(null)
@@ -139,7 +139,7 @@ export default function ResumeSection() {
 
             <section className={styles.container}>
                 <div className={styles.header}>
-                    <Headline lineTop="Askold Makrikov" lineBottom="Resume" />
+                    <SectionHeader line="Resume" videoWidth={420} />
                 </div>
 
                 <div className={styles.aboutSection}>
@@ -189,28 +189,29 @@ export default function ResumeSection() {
                                 </div>
                             </div>
                             <div className={styles.middle}>
-                                <div className={styles.dot}></div>
+                                <div className={styles.line}></div>
+                                <div className={`${styles.dot} ${index === 0 ? styles.active : ''}`}></div>
                                 <div className={styles.line}></div>
                             </div>
                         </div>
                     ))}
                 </div>
-            </section>
 
-            <div className={styles.deliverySection}>
-                <h2 className={styles.deliveryTitle}>From Idea to Online</h2>
-                <p className={styles.deliveryIntro}>
-                    I don’t just design or code — I deliver complete, launch-ready digital products. From first idea to final pixel, I cover every step of the journey.
-                </p>
-                <div className={styles.deliveryGrid}>
-                    <div className={styles.deliveryCard}><h4>Concept Crystallization</h4><p>We clarify goals, users, and positioning — shaping ideas into clear direction and strategy.</p></div>
-                    <div className={styles.deliveryCard}><h4>Brand Identity</h4><p>Logo design, visual language, and brand systems that unify your message across all channels.</p></div>
-                    <div className={styles.deliveryCard}><h4>Web Design</h4><p>Responsive and aesthetic UI/UX designs — crafted for clarity, usability, and engagement.</p></div>
-                    <div className={styles.deliveryCard}><h4>Content & Copywriting</h4><p>Strategic website copy, UX microcopy, and structured content — clear, aligned, and effective.</p></div>
-                    <div className={styles.deliveryCard}><h4>Web Development</h4><p>Fast, responsive websites built with React, Next.js, or WordPress — clean, scalable, and animated.</p></div>
-                    <div className={styles.deliveryCard}><h4>SEO & Launch Optimization</h4><p>echnical SEO, performance tuning, and accessibility — ready to perform from day one.</p></div>
+                <div className={styles.deliverySection}>
+                    <h2 className={styles.deliveryTitle}>From Idea to Online</h2>
+                    <p className={styles.deliveryIntro}>
+                        I don’t just design or code — I deliver complete, launch-ready digital products. From first idea to final pixel, I cover every step of the journey.
+                    </p>
+                    <div className={styles.deliveryGrid}>
+                        <div className={styles.deliveryCard}><h4>Concept Crystallization</h4><p>We clarify goals, users, and positioning — shaping ideas into clear direction and strategy.</p></div>
+                        <div className={styles.deliveryCard}><h4>Brand Identity</h4><p>Logo design, visual language, and brand systems that unify your message across all channels.</p></div>
+                        <div className={styles.deliveryCard}><h4>Web Design</h4><p>Responsive and aesthetic UI/UX designs — crafted for clarity, usability, and engagement.</p></div>
+                        <div className={styles.deliveryCard}><h4>Content & Copywriting</h4><p>Strategic website copy, UX microcopy, and structured content — clear, aligned, and effective.</p></div>
+                        <div className={styles.deliveryCard}><h4>Web Development</h4><p>Fast, responsive websites built with React, Next.js, or WordPress — clean, scalable, and animated.</p></div>
+                        <div className={styles.deliveryCard}><h4>SEO & Launch Optimization</h4><p>echnical SEO, performance tuning, and accessibility — ready to perform from day one.</p></div>
+                    </div>
                 </div>
-            </div>
+            </section>
         </>
     )
 }

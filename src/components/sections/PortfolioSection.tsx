@@ -1,6 +1,6 @@
 'use client'
 
-import Headline from '@/components/ui/Headline'
+import SectionHeader from '@/components/ui/SectionHeader'
 import ProjectCard from '@/components/portfolio/ProjectCard'
 import styles from './PortfolioSection.module.scss'
 
@@ -10,7 +10,7 @@ export default function PortfolioSection() {
   return (
     <section className={styles.container}>
       <div className={styles.header}>
-        <Headline lineTop="Selected works" lineBottom="Portfolio" />
+        <SectionHeader line="Portfolio" videoWidth={350}/>
       </div>
 
       <div className={styles.projects}>

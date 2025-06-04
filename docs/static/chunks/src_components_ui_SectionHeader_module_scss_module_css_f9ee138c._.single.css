@@ -1,0 +1,46 @@
+/* [project]/src/components/ui/SectionHeader.module.scss.module.css [app-client] (css) */
+.SectionHeader-module-scss-module__oyZyCq__sectionHeaderWrapper {
+  padding: clamp(1.5rem, 5vw, 4rem);
+  position: relative;
+  overflow: visible;
+}
+
+.SectionHeader-module-scss-module__oyZyCq__inner {
+  width: 100%;
+  height: 10rem;
+  position: relative;
+}
+
+.SectionHeader-module-scss-module__oyZyCq__video {
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 1;
+  border-radius: 1rem;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)translateY(20px);
+  box-shadow: 0 0 1rem #0000004d;
+}
+
+.SectionHeader-module-scss-module__oyZyCq__sectionHeaderText {
+  z-index: 2;
+  font-family: var(--font-cormorant);
+  color: #f0c332;
+  text-align: left;
+  max-width: 100%;
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 1.1;
+  position: relative;
+}
+
+@media (width <= 640px) {
+  .SectionHeader-module-scss-module__oyZyCq__sectionHeaderText {
+    text-align: center;
+    font-size: 4rem;
+  }
+}
+
+/*# sourceMappingURL=src_components_ui_SectionHeader_module_scss_module_css_f9ee138c._.single.css.map*/

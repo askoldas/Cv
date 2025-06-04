@@ -1,6 +1,6 @@
 'use client'
 
-import Headline from '@/components/ui/Headline'
+import SectionHeader from '@/components/ui/SectionHeader'
 import ContactForm from '@/app/contact/ContactForm'
 import styles from './ContactSection.module.scss'
 
@@ -8,7 +8,7 @@ export default function ContactSection() {
   return (
     <section className={styles.container}>
       <div className={styles.header}>
-        <Headline lineTop="Let's Connect" lineBottom="Contact" />
+        <SectionHeader line="Contact" videoWidth={280}/>
       </div>
 
       <div className={styles.content}>
