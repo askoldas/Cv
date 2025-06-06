@@ -34,7 +34,7 @@
     ".next/types/**/*.ts",
     "next-env.d.ts",
     "docs/types/**/*.ts"
-  ],
+, "src/components/sections/ResumeSection.jsx"  ],
   "exclude": [
     "node_modules"
   ]

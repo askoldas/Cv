@@ -16,7 +16,7 @@ export default function PortfolioSection() {
         imgSrc="/amphora.png" // your transparent PNG path
         alt="Decorative stroke"
       />
-        <SectionHeader line="Portfolio" videoWidth={350}/>
+        
       </div>
 
       <div className={styles.projects}>

@@ -1,16 +1,17 @@
 .sectionHeaderWrapper {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   min-height: clamp(25rem, 60vh, 50rem);
   padding: 0;
-  overflow: visible;
+  position: relative;
 
   @media (max-width: 768px) {
-    display: block;
+    flex-direction: column;
     min-height: auto;
+    padding: 2rem 1rem;
+    gap: 1rem; // tight spacing between text and image
   }
 }
 
@@ -21,17 +22,18 @@
   transform: translateY(-50%);
   height: 100%;
   width: auto;
-  max-width: none;
   object-fit: contain;
   z-index: 1;
   pointer-events: none;
 
   @media (max-width: 768px) {
-    position: static;
+    position: relative;
+    top: auto;
     transform: none;
     width: 100%;
     height: auto;
-    object-fit: cover;
+    z-index: 0;
+    margin-top: 0; // remove any spacing
   }
 }
 
@@ -42,14 +44,10 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 2rem;
   text-align: center;
 
   @media (max-width: 768px) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: static;
   }
 }
 
@@ -64,6 +62,5 @@
 
   @media (max-width: 768px) {
     font-size: 4rem;
-    padding: 0 1rem;
   }
 }

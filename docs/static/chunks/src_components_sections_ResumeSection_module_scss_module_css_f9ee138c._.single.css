@@ -3,7 +3,6 @@
   color: #fff;
   padding-top: 64px;
   flex-direction: column;
-  gap: 3rem;
   min-height: 100vh;
   padding-inline: 1rem;
   display: flex;
@@ -48,7 +47,7 @@
   text-align: center;
   flex-direction: column;
   gap: 1rem;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 4rem auto 3rem;
   display: flex;
 }
@@ -60,16 +59,16 @@
 }
 
 .ResumeSection-module-scss-module__oYUuGW__aboutSection p {
-  color: #ccc;
-  font-size: 1.1rem;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .ResumeSection-module-scss-module__oYUuGW__aboutMeBlock {
   align-items: flex-start;
   gap: 4rem;
-  max-width: 1000px;
+  max-width: 750px;
   margin: 0 auto;
-  padding: 3rem 0 4rem;
+  padding-bottom: 5rem;
   display: flex;
 }
 
@@ -80,29 +79,17 @@
   }
 }
 
-.ResumeSection-module-scss-module__oYUuGW__aboutMeBlock .ResumeSection-module-scss-module__oYUuGW__left {
-  flex: none;
-  width: fit-content;
-  min-width: 120px;
-  max-width: 160px;
-}
-
-.ResumeSection-module-scss-module__oYUuGW__aboutMeBlock .ResumeSection-module-scss-module__oYUuGW__left h3 {
-  margin: 0;
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-
 .ResumeSection-module-scss-module__oYUuGW__aboutMeBlock .ResumeSection-module-scss-module__oYUuGW__right {
   flex-direction: column;
   flex: 1;
-  gap: 1.2rem;
   display: flex;
 }
 
 .ResumeSection-module-scss-module__oYUuGW__aboutMeBlock .ResumeSection-module-scss-module__oYUuGW__right p {
   color: #ccc;
-  font-size: 1.05rem;
+  text-align: center;
+  margin-bottom: .6rem;
+  font-size: 1.2rem;
   line-height: 1.7;
 }
 
@@ -116,6 +103,12 @@
 
 .ResumeSection-module-scss-module__oYUuGW__aboutMeBlock .ResumeSection-module-scss-module__oYUuGW__right ul li {
   line-height: 1.6;
+}
+
+.ResumeSection-module-scss-module__oYUuGW__aboutMeBlock h2 {
+  color: #f0c332;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .ResumeSection-module-scss-module__oYUuGW__processSection {
