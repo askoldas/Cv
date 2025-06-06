@@ -2,13 +2,15 @@
 
 import SectionHeader from '@/components/ui/SectionHeader'
 import ContactForm from '@/app/contact/ContactForm'
+import ContactButton from '@/components/ui/ContactButton'
 import styles from './ContactSection.module.scss'
+import { FaWhatsapp, FaTelegramPlane, FaPhoneAlt } from 'react-icons/fa'
 
 export default function ContactSection() {
   return (
     <section className={styles.container}>
       <div className={styles.header}>
-        <SectionHeader line="Contact" videoWidth={280}/>
+        <SectionHeader line="Contact" videoWidth={280} />
       </div>
 
       <div className={styles.content}>
@@ -20,13 +22,24 @@ export default function ContactSection() {
           </p>
 
           <div className={styles.contactLinks}>
-            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
-              WhatsApp
-            </a>
-            <a href="https://t.me/your_username" target="_blank" rel="noopener noreferrer">
-              Telegram
-            </a>
-            <a href="tel:+1234567890">Call</a>
+            <ContactButton
+              href="https://wa.me/1234567890"
+              icon={<FaWhatsapp />}
+              color="#25D366"
+            />
+
+            <ContactButton
+              href="https://t.me/your_username"
+              icon={<FaTelegramPlane />}
+              color="#0088CC"
+            />
+
+            <ContactButton
+              href="tel:+1234567890"
+              icon={<FaPhoneAlt />}
+              color="#f0c332"
+            />
+
           </div>
         </div>
 

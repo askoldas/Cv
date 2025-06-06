@@ -1,0 +1,270 @@
+/* [project]/src/components/hero/HeroSection.module.scss.module.css [app-client] (css) */
+.HeroSection-module-scss-module__S9Gu7W__container {
+  height: 205vh;
+  position: relative;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__heroInner {
+  color: #fff;
+  background: #000;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+@media (width <= 640px) {
+  .HeroSection-module-scss-module__S9Gu7W__heroInner {
+    flex-direction: column;
+  }
+}
+
+.HeroSection-module-scss-module__S9Gu7W__leftText {
+  z-index: 10;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100vh;
+  padding: clamp(1.5rem, 5vw, 4rem);
+  display: flex;
+}
+
+@media (width <= 640px) {
+  .HeroSection-module-scss-module__S9Gu7W__leftText {
+    z-index: 1;
+    text-align: left;
+    align-items: flex-start;
+    min-width: 100%;
+    position: relative;
+  }
+}
+
+.HeroSection-module-scss-module__S9Gu7W__headlineWrapper {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__blockWrapper {
+  width: 100%;
+  min-height: 220px;
+  margin-top: auto;
+  position: relative;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__introBlock, .HeroSection-module-scss-module__S9Gu7W__outroBlock {
+  opacity: 0;
+  z-index: 0;
+  pointer-events: none;
+  width: 100%;
+  transition: opacity .4s;
+}
+
+@media (width <= 640px) {
+  .HeroSection-module-scss-module__S9Gu7W__introBlock, .HeroSection-module-scss-module__S9Gu7W__outroBlock {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.HeroSection-module-scss-module__S9Gu7W__rightVideo {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+}
+
+@media (width <= 640px) {
+  .HeroSection-module-scss-module__S9Gu7W__rightVideo {
+    z-index: 0;
+    position: absolute;
+    inset: 0;
+  }
+}
+
+.HeroSection-module-scss-module__S9Gu7W__video {
+  object-fit: cover;
+  width: auto;
+  height: 100vh;
+}
+
+@media (width <= 640px) {
+  .HeroSection-module-scss-module__S9Gu7W__video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.HeroSection-module-scss-module__S9Gu7W__headlinePrimary {
+  font-family: var(--font-inter);
+  white-space: pre-wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .8rem;
+  height: 11rem;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  display: flex;
+  position: relative;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__lineTop {
+  width: 100%;
+  min-height: 3.6rem;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__lineBottom {
+  width: 100%;
+  min-height: 6.6rem;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__wordHighlight {
+  font-family: var(--font-cormorant);
+  color: #f0c332;
+  font-size: 6rem;
+  line-height: 1.1;
+  display: inline-block;
+}
+
+@media (width <= 640px) {
+  .HeroSection-module-scss-module__S9Gu7W__wordHighlight {
+    font-size: 4rem;
+  }
+}
+
+.HeroSection-module-scss-module__S9Gu7W__headlineSecondary {
+  font-family: var(--font-inter);
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__introParagraph, .HeroSection-module-scss-module__S9Gu7W__outroParagraph {
+  font-family: var(--font-inter);
+  max-width: 600px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__ctaButtons {
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__cta {
+  font-family: var(--font-inter);
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .2s;
+  display: inline-block;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__cta.HeroSection-module-scss-module__S9Gu7W__solid {
+  color: #000;
+  background: #f0c332;
+  border: none;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__cta.HeroSection-module-scss-module__S9Gu7W__solid:hover {
+  background: #eee;
+  transform: translateY(-2px);
+}
+
+.HeroSection-module-scss-module__S9Gu7W__cta.HeroSection-module-scss-module__S9Gu7W__outlined {
+  color: #fff;
+  background: none;
+  border: 2px solid #fff;
+}
+
+.HeroSection-module-scss-module__S9Gu7W__cta.HeroSection-module-scss-module__S9Gu7W__outlined:hover {
+  background: #ffffff1a;
+  transform: translateY(-2px);
+}
+
+.HeroSection-module-scss-module__S9Gu7W__cursor {
+  background-color: currentColor;
+  width: 1px;
+  height: 1em;
+  margin-left: 2px;
+  animation: 1s step-end infinite HeroSection-module-scss-module__S9Gu7W__blink;
+  display: inline-block;
+}
+
+@keyframes HeroSection-module-scss-module__S9Gu7W__blink {
+  0%, 50% {
+    opacity: 1;
+  }
+
+  50.01%, 100% {
+    opacity: 0;
+  }
+}
+
+
+/* [project]/src/components/ui/Button.module.scss.module.css [app-client] (css) */
+.Button-module-scss-module__OoW-YW__cta {
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .2s;
+  display: inline-block;
+}
+
+.Button-module-scss-module__OoW-YW__cta:focus {
+  outline-offset: 2px;
+  outline: 2px solid #fff9;
+}
+
+.Button-module-scss-module__OoW-YW__cta:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+
+.Button-module-scss-module__OoW-YW__solid {
+  color: #000;
+  background: #f0c332;
+  border: none;
+}
+
+.Button-module-scss-module__OoW-YW__solid:hover {
+  transform: translateY(-2px);
+}
+
+.Button-module-scss-module__OoW-YW__outlined {
+  color: #fff;
+  background: none;
+  border: 2px solid #fff;
+}
+
+.Button-module-scss-module__OoW-YW__outlined:hover {
+  background: #ffffff1a;
+  transform: translateY(-2px);
+}
+
+.Button-module-scss-module__OoW-YW__disabled, :disabled {
+  opacity: .5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+
+/*# sourceMappingURL=src_components_e5026c4b._.css.map*/

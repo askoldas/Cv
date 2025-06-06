@@ -1,7 +1,8 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
-import Headline from '@/components/ui/Headline'
+import Image from 'next/image'
+import Header from '@/components/ui/Header'
 import styles from './ResumeSection.module.scss'
 import SectionHeader from '@/components/ui/SectionHeader'
 gsap.registerPlugin(ScrollTrigger)
@@ -75,51 +76,47 @@ export default function ResumeSection() {
     const steps = [
         {
             number: '00',
-            title: '📐 Strategy & Structure',
+            title: 'Strategy & Structure',
             description: `Every great project begins with listening. I collaborate closely with clients to understand business goals, user needs, and creative vision. Beyond discovery, I plan the digital architecture — designing content structures, data flow, and functionality with clarity and intent.`,
-            tools: ['Notion', 'ClickUp', 'Asana', 'Jira', 'Miro'],
+            tools: ['notion', 'clickup', 'airtable', 'miro', 'trello', 'lucidchart'],
         },
         {
             number: '01',
-            emoji: '🎨',
             title: 'Design & Creative',
             description:
                 'Visual expression is at the heart of everything I build. I work fluently across industry-standard tools to craft intuitive, aesthetic, and meaningful digital experiences — from branding and layout to motion and presentation.',
-            tools: ['Photoshop', 'Illustrator', 'InDesign', 'After Effects', 'SketchUp'],
+            tools: ['photoshop', 'illustrator', 'premier', 'indesign', 'aftereffects', 'animate'],
         },
         {
             number: '02',
-            emoji: '🧪',
             title: 'UI/UX & Prototyping',
             description:
                 "I prototype with purpose — validating ideas through wireframes, flows, and interactive mockups. Whether it's early low-fidelity sketching or polished UI systems, I choose the right fidelity for each phase.",
-            tools: ['Figma', 'Adobe XD', 'Axure RP', 'Balsamiq'],
+            tools: ['adobexd', 'axure', 'figma', 'balsamiq'],
         },
         {
             number: '03',
-            emoji: '💻',
             title: 'Frontend Development',
             description:
                 'My front-end work bridges visuals and interaction. I develop responsive, accessible, and performant UIs using modern frameworks — enhancing them with animations and a focus on clean, maintainable code.',
-            tools: ['HTML', 'CSS', 'Sass', 'JavaScript', 'GSAP', 'React.js', 'Next.js', 'VS Code'],
+            tools: ['sass', 'js', 'gsap', 'react', 'next'],
         },
         {
             number: '04',
-            emoji: '🛒',
             title: 'Web Platforms & CMS',
             description:
                 'I integrate design and development within powerful content and commerce platforms. From headless solutions to CMS-based builds, I deliver sites that are editable, scalable, and client-friendly.',
-            tools: ['WordPress', 'WooCommerce', 'Shopify', 'OpenCart', 'Firebase'],
+            tools: ['firebase', 'shopify', 'wordpress', 'woo', 'prestashop', 'umbraco'],
         },
         {
             number: '05',
-            emoji: '🤖',
             title: 'AI Powered',
             description:
                 'I work hand-in-hand with a growing ecosystem of AI tools — from design ideation to code generation and content workflows. This supercharges creativity, speed, and quality across every phase of the process.',
-            tools: ['ChatGPT', 'Midjourney', 'Adobe Firefly', 'Sora', 'DeepSeek', 'Krea'],
+            tools: ['gpt', 'midjourney',  'runway', 'firefly', 'krea', 'deepseek',],
         },
-    ]
+    ];
+
 
     return (
         <>
@@ -139,7 +136,11 @@ export default function ResumeSection() {
 
             <section className={styles.container}>
                 <div className={styles.header}>
-                    <SectionHeader line="Resume" videoWidth={420} />
+                    <Header
+                            line="Crafting Digital Experiences"
+                            imgSrc="/column.png" 
+                            alt="Decorative stroke"
+                          />
                 </div>
 
                 <div className={styles.aboutSection}>
@@ -174,18 +175,35 @@ export default function ResumeSection() {
                         <div className={styles.step} key={index}>
                             <div className={styles.leftRight}>
                                 <div className={styles.left}>
-                                    <div className={styles.stepNumber}>{step.number}</div>
-                                    <h3 className={styles.stepTitle}>
-                                        {step.emoji} {step.title}
+                                    <h3
+                                        className={styles.stepTitle}
+                                        data-step={step.number}
+                                    >
+                                        {step.title}
                                     </h3>
+
                                     <p className={styles.stepDescription}>{step.description}</p>
                                 </div>
                                 <div className={styles.right}>
                                     <div className={styles.toolGrid}>
-                                        {step.tools.map((tool, i) => (
-                                            <span key={i}>{tool}</span>
-                                        ))}
+                                        {step.tools.map((tool, i) => {
+                                            const logoName = tool.toLowerCase().replace(/\s+/g, '_') + '_logo.svg';
+
+                                            return (
+                                                <div key={i} className={styles.toolLogo}>
+                                                    <Image
+                                                        src={`/logos/${logoName}`}
+                                                        alt={`${tool} logo`}
+                                                        width={80}
+                                                        height={80}
+                                                        title={tool}
+                                                    />
+                                                </div>
+                                            );
+                                        })}
                                     </div>
+
+
                                 </div>
                             </div>
                             <div className={styles.middle}>

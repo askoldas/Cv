@@ -1,0 +1,80 @@
+/* [project]/src/components/ui/Header.module.scss.module.css [app-client] (css) */
+.Header-module-scss-module__MS_ZbW__sectionHeaderWrapper {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: clamp(25rem, 60vh, 50rem);
+  padding: 0;
+  display: flex;
+  position: relative;
+  overflow: visible;
+}
+
+@media (width <= 768px) {
+  .Header-module-scss-module__MS_ZbW__sectionHeaderWrapper {
+    min-height: auto;
+    display: block;
+  }
+}
+
+.Header-module-scss-module__MS_ZbW__image {
+  object-fit: contain;
+  z-index: 1;
+  pointer-events: none;
+  width: auto;
+  max-width: none;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+@media (width <= 768px) {
+  .Header-module-scss-module__MS_ZbW__image {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    position: static;
+    transform: none;
+  }
+}
+
+.Header-module-scss-module__MS_ZbW__textContainer {
+  z-index: 2;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  position: relative;
+}
+
+@media (width <= 768px) {
+  .Header-module-scss-module__MS_ZbW__textContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.Header-module-scss-module__MS_ZbW__sectionHeaderText {
+  font-family: var(--font-cormorant);
+  color: #f0c332;
+  max-width: 50rem;
+  margin: 0;
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+@media (width <= 768px) {
+  .Header-module-scss-module__MS_ZbW__sectionHeaderText {
+    padding: 0 1rem;
+    font-size: 4rem;
+  }
+}
+
+/*# sourceMappingURL=src_components_ui_Header_module_scss_module_css_f9ee138c._.single.css.map*/

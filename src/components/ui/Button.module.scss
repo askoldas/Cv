@@ -1,0 +1,53 @@
+// components/ui/Button.module.scss
+@use '@/_variables' as *;
+
+.cta {
+  font-family: $font-family-base;
+  padding: $spacing-sm $spacing-md;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  border-radius: $radius-sm;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+
+  &:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.6);
+    outline-offset: 2px;
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: none;
+  }
+}
+
+.solid {
+  background: $color-accent;
+  color: $color-background;
+  border: none;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.outlined {
+  background: transparent;
+  color: $color-text-base;
+  border: 2px solid $color-text-base;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+  }
+}
+
+.disabled,
+:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}

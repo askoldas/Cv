@@ -1,0 +1,32 @@
+@use '@/_variables' as *;
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  aspect-ratio: 1 / 1;
+  padding: 0.8rem;
+  border: 2px solid $color-text-base;
+  border-radius: 50%;
+  background: transparent;
+  color: $color-text-base;
+  font-family: $font-family-base;
+  font-weight: $font-weight-bold;
+  transition: all 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--hover-bg);
+    color: $color-background;
+    border-color: var(--hover-bg);
+  }
+}
+
+.icon {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import HeroSection from '@/components/hero/HeroSection'
 import PortfolioSection from '@/components/sections/PortfolioSection'
-import ResumeSection from '@/components/sections/ResumeSection' // ✅ Correct name
+import ResumeSection from '@/components/sections/ResumeSection' 
 import ContactSection from '@/components/sections/ContactSection'
 import styles from './spa.module.scss'
 

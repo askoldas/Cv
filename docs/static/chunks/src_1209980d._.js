@@ -930,6 +930,7 @@ __turbopack_context__.v({
   "stepNumber": "ResumeSection-module-scss-module__oYUuGW__stepNumber",
   "stepTitle": "ResumeSection-module-scss-module__oYUuGW__stepTitle",
   "toolGrid": "ResumeSection-module-scss-module__oYUuGW__toolGrid",
+  "toolLogo": "ResumeSection-module-scss-module__oYUuGW__toolLogo",
   "videoBackground": "ResumeSection-module-scss-module__oYUuGW__videoBackground",
   "videoWrapper": "ResumeSection-module-scss-module__oYUuGW__videoWrapper",
 });
@@ -944,6 +945,7 @@ __turbopack_context__.s({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$ResumeSection$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/components/sections/ResumeSection.module.scss.module.css [app-client] (css module)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$SectionHeader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/SectionHeader.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/gsap/index.js [app-client] (ecmascript) <locals>");
@@ -951,6 +953,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$Scro
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
+;
 ;
 ;
 ;
@@ -1055,82 +1058,77 @@ function ResumeSection() {
     const steps = [
         {
             number: '00',
-            title: '📐 Strategy & Structure',
+            title: 'Strategy & Structure',
             description: `Every great project begins with listening. I collaborate closely with clients to understand business goals, user needs, and creative vision. Beyond discovery, I plan the digital architecture — designing content structures, data flow, and functionality with clarity and intent.`,
             tools: [
-                'Notion',
-                'ClickUp',
-                'Asana',
-                'Jira',
-                'Miro'
+                'notion',
+                'clickup',
+                'airtable',
+                'miro',
+                'trello',
+                'lucidchart'
             ]
         },
         {
             number: '01',
-            emoji: '🎨',
             title: 'Design & Creative',
             description: 'Visual expression is at the heart of everything I build. I work fluently across industry-standard tools to craft intuitive, aesthetic, and meaningful digital experiences — from branding and layout to motion and presentation.',
             tools: [
-                'Photoshop',
-                'Illustrator',
-                'InDesign',
-                'After Effects',
-                'SketchUp'
+                'photoshop',
+                'illustrator',
+                'premier',
+                'indesign',
+                'aftereffects',
+                'animate'
             ]
         },
         {
             number: '02',
-            emoji: '🧪',
             title: 'UI/UX & Prototyping',
             description: "I prototype with purpose — validating ideas through wireframes, flows, and interactive mockups. Whether it's early low-fidelity sketching or polished UI systems, I choose the right fidelity for each phase.",
             tools: [
-                'Figma',
-                'Adobe XD',
-                'Axure RP',
-                'Balsamiq'
+                'adobexd',
+                'axure',
+                'figma',
+                'balsamiq'
             ]
         },
         {
             number: '03',
-            emoji: '💻',
             title: 'Frontend Development',
             description: 'My front-end work bridges visuals and interaction. I develop responsive, accessible, and performant UIs using modern frameworks — enhancing them with animations and a focus on clean, maintainable code.',
             tools: [
-                'HTML',
-                'CSS',
-                'Sass',
-                'JavaScript',
-                'GSAP',
-                'React.js',
-                'Next.js',
-                'VS Code'
+                'sass',
+                'js',
+                'gsap',
+                'react',
+                'next'
             ]
         },
         {
             number: '04',
-            emoji: '🛒',
             title: 'Web Platforms & CMS',
             description: 'I integrate design and development within powerful content and commerce platforms. From headless solutions to CMS-based builds, I deliver sites that are editable, scalable, and client-friendly.',
             tools: [
-                'WordPress',
-                'WooCommerce',
-                'Shopify',
-                'OpenCart',
-                'Firebase'
+                'firebase',
+                'shopify',
+                'wordpress',
+                'woo',
+                'prestashop',
+                'umbraco'
             ]
         },
         {
             number: '05',
-            emoji: '🤖',
             title: 'AI Powered',
             description: 'I work hand-in-hand with a growing ecosystem of AI tools — from design ideation to code generation and content workflows. This supercharges creativity, speed, and quality across every phase of the process.',
             tools: [
-                'ChatGPT',
-                'Midjourney',
-                'Adobe Firefly',
-                'Sora',
-                'DeepSeek',
-                'Krea'
+                'gpt',
+                'midjourney',
+                'runway',
+                'firefly',
+                'krea',
+                'deepseek'
             ]
         }
     ];
@@ -1152,25 +1150,25 @@ function ResumeSection() {
                             type: "video/mp4"
                         }, void 0, false, {
                             fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                            lineNumber: 135,
+                            lineNumber: 132,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                        lineNumber: 127,
+                        lineNumber: 124,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$ResumeSection$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].leftFade
                     }, void 0, false, {
                         fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                        lineNumber: 137,
+                        lineNumber: 134,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                lineNumber: 126,
+                lineNumber: 123,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1183,12 +1181,12 @@ function ResumeSection() {
                             videoWidth: 420
                         }, void 0, false, {
                             fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                            lineNumber: 142,
+                            lineNumber: 139,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                        lineNumber: 141,
+                        lineNumber: 138,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1198,20 +1196,20 @@ function ResumeSection() {
                                 children: "Designer. Developer. Creative Thinker."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                lineNumber: 146,
+                                lineNumber: 143,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 children: "My name is Askold Makrikov. I bridge design and technology to craft engaging, user-focused digital experiences. My background spans frontend development, UI/UX design, and motion — with a passion for both aesthetics and performance."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                lineNumber: 147,
+                                lineNumber: 144,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                        lineNumber: 145,
+                        lineNumber: 142,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1223,12 +1221,12 @@ function ResumeSection() {
                                     children: "About Me"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                    lineNumber: 154,
+                                    lineNumber: 151,
                                     columnNumber: 25
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                lineNumber: 153,
+                                lineNumber: 150,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1238,40 +1236,40 @@ function ResumeSection() {
                                         children: "What began as a creative exploration of design tools and web technologies has grown into a practice focused on building digital experiences that are structured, intuitive, and visually engaging."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                        lineNumber: 157,
+                                        lineNumber: 154,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "I combine design sensitivity with technical skill — shaping interfaces that feel natural, telling stories through layout and copy, and developing high-performing websites that scale. From UI design to e-commerce builds, every project is an opportunity to craft with purpose and detail."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                        lineNumber: 160,
+                                        lineNumber: 157,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "Over the years, I’ve worked across every phase of digital creation — strategy, design, content, front-end development, and platform integration. This hands-on journey has shaped my flexible, end-to-end approach and familiarized me with a wide range of tools, techniques, and workflows that adapt to each project."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                        lineNumber: 163,
+                                        lineNumber: 160,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "It’s this blend of creativity, structure, and process awareness that drives the way I think, work, and collaborate."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                        lineNumber: 166,
+                                        lineNumber: 163,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                lineNumber: 156,
+                                lineNumber: 153,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                        lineNumber: 152,
+                        lineNumber: 149,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1285,24 +1283,13 @@ function ResumeSection() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$ResumeSection$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].left,
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$ResumeSection$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].stepNumber,
-                                                        children: step.number
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                                        lineNumber: 177,
-                                                        columnNumber: 37
-                                                    }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$ResumeSection$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].stepTitle,
-                                                        children: [
-                                                            step.emoji,
-                                                            " ",
-                                                            step.title
-                                                        ]
-                                                    }, void 0, true, {
+                                                        "data-step": step.number,
+                                                        children: step.title
+                                                    }, void 0, false, {
                                                         fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                                        lineNumber: 178,
+                                                        lineNumber: 174,
                                                         columnNumber: 37
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1316,20 +1303,34 @@ function ResumeSection() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                                lineNumber: 176,
+                                                lineNumber: 173,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$ResumeSection$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].right,
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$ResumeSection$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].toolGrid,
-                                                    children: step.tools.map((tool, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            children: tool
+                                                    children: step.tools.map((tool, i)=>{
+                                                        const logoName = tool.toLowerCase().replace(/\s+/g, '_') + '_logo.svg';
+                                                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$ResumeSection$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].toolLogo,
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                                src: `/logos/${logoName}`,
+                                                                alt: `${tool} logo`,
+                                                                width: 80,
+                                                                height: 80,
+                                                                title: tool
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/sections/ResumeSection.tsx",
+                                                                lineNumber: 190,
+                                                                columnNumber: 53
+                                                            }, this)
                                                         }, i, false, {
                                                             fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                                            lineNumber: 186,
-                                                            columnNumber: 45
-                                                        }, this))
+                                                            lineNumber: 189,
+                                                            columnNumber: 49
+                                                        }, this);
+                                                    })
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/sections/ResumeSection.tsx",
                                                     lineNumber: 184,
@@ -1343,7 +1344,7 @@ function ResumeSection() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                        lineNumber: 175,
+                                        lineNumber: 172,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1353,38 +1354,38 @@ function ResumeSection() {
                                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$ResumeSection$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].line
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                                lineNumber: 192,
+                                                lineNumber: 206,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$ResumeSection$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].dot} ${index === 0 ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$ResumeSection$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].active : ''}`
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                                lineNumber: 193,
+                                                lineNumber: 207,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$ResumeSection$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].line
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                                lineNumber: 194,
+                                                lineNumber: 208,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                        lineNumber: 191,
+                                        lineNumber: 205,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, index, true, {
                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                lineNumber: 174,
+                                lineNumber: 171,
                                 columnNumber: 25
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                        lineNumber: 172,
+                        lineNumber: 169,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1395,7 +1396,7 @@ function ResumeSection() {
                                 children: "From Idea to Online"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                lineNumber: 201,
+                                lineNumber: 215,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1403,7 +1404,7 @@ function ResumeSection() {
                                 children: "I don’t just design or code — I deliver complete, launch-ready digital products. From first idea to final pixel, I cover every step of the journey."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                lineNumber: 202,
+                                lineNumber: 216,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1416,20 +1417,20 @@ function ResumeSection() {
                                                 children: "Concept Crystallization"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                                lineNumber: 206,
+                                                lineNumber: 220,
                                                 columnNumber: 62
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 children: "We clarify goals, users, and positioning — shaping ideas into clear direction and strategy."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                                lineNumber: 206,
+                                                lineNumber: 220,
                                                 columnNumber: 94
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                        lineNumber: 206,
+                                        lineNumber: 220,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1439,20 +1440,20 @@ function ResumeSection() {
                                                 children: "Brand Identity"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                                lineNumber: 207,
+                                                lineNumber: 221,
                                                 columnNumber: 62
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 children: "Logo design, visual language, and brand systems that unify your message across all channels."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                                lineNumber: 207,
+                                                lineNumber: 221,
                                                 columnNumber: 85
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                        lineNumber: 207,
+                                        lineNumber: 221,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1462,20 +1463,20 @@ function ResumeSection() {
                                                 children: "Web Design"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                                lineNumber: 208,
+                                                lineNumber: 222,
                                                 columnNumber: 62
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 children: "Responsive and aesthetic UI/UX designs — crafted for clarity, usability, and engagement."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                                lineNumber: 208,
+                                                lineNumber: 222,
                                                 columnNumber: 81
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                        lineNumber: 208,
+                                        lineNumber: 222,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1485,20 +1486,20 @@ function ResumeSection() {
                                                 children: "Content & Copywriting"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                                lineNumber: 209,
+                                                lineNumber: 223,
                                                 columnNumber: 62
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 children: "Strategic website copy, UX microcopy, and structured content — clear, aligned, and effective."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                                lineNumber: 209,
+                                                lineNumber: 223,
                                                 columnNumber: 92
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                        lineNumber: 209,
+                                        lineNumber: 223,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1508,20 +1509,20 @@ function ResumeSection() {
                                                 children: "Web Development"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                                lineNumber: 210,
+                                                lineNumber: 224,
                                                 columnNumber: 62
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 children: "Fast, responsive websites built with React, Next.js, or WordPress — clean, scalable, and animated."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                                lineNumber: 210,
+                                                lineNumber: 224,
                                                 columnNumber: 86
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                        lineNumber: 210,
+                                        lineNumber: 224,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1531,38 +1532,38 @@ function ResumeSection() {
                                                 children: "SEO & Launch Optimization"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                                lineNumber: 211,
+                                                lineNumber: 225,
                                                 columnNumber: 62
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 children: "echnical SEO, performance tuning, and accessibility — ready to perform from day one."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                                lineNumber: 211,
+                                                lineNumber: 225,
                                                 columnNumber: 96
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                        lineNumber: 211,
+                                        lineNumber: 225,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                                lineNumber: 205,
+                                lineNumber: 219,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                        lineNumber: 200,
+                        lineNumber: 214,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/sections/ResumeSection.tsx",
-                lineNumber: 140,
+                lineNumber: 137,
                 columnNumber: 13
             }, this)
         ]

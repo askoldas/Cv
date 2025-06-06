@@ -48,27 +48,4 @@
   flex: 2;
 }
 
-.ContactSection-module-scss-module__K9N5bG__contactLinks {
-  flex-wrap: wrap;
-  gap: .75rem;
-  margin-top: 1.5rem;
-  display: flex;
-}
-
-.ContactSection-module-scss-module__K9N5bG__contactLinks a {
-  color: #fff;
-  background: #111;
-  border: 1px solid #333;
-  border-radius: 6px;
-  padding: .5rem 1rem;
-  font-size: .95rem;
-  text-decoration: none;
-  transition: all .2s;
-}
-
-.ContactSection-module-scss-module__K9N5bG__contactLinks a:hover {
-  background: #222;
-  border-color: #fff;
-}
-
 /*# sourceMappingURL=src_components_sections_ContactSection_module_scss_module_css_f9ee138c._.single.css.map*/

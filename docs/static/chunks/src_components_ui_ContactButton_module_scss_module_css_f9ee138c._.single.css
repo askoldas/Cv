@@ -1,0 +1,33 @@
+/* [project]/src/components/ui/ContactButton.module.scss.module.css [app-client] (css) */
+.ContactButton-module-scss-module__kd_5NG__button {
+  aspect-ratio: 1;
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: .8rem;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  transition: all .2s;
+  display: inline-flex;
+}
+
+.ContactButton-module-scss-module__kd_5NG__button:hover {
+  background-color: var(--hover-bg);
+  color: #000;
+  border-color: var(--hover-bg);
+}
+
+.ContactButton-module-scss-module__kd_5NG__icon {
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  display: flex;
+}
+
+/*# sourceMappingURL=src_components_ui_ContactButton_module_scss_module_css_f9ee138c._.single.css.map*/

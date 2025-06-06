@@ -6,6 +6,7 @@ import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import HeroHeadline from './HeroHeadline'
 import HeroContentBlock from './HeroContentBlock'
+import Button from '@/components/ui/Button'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -44,7 +45,6 @@ export default function HeroSection({ onUnlockScroll, onNav }: HeroSectionProps)
     }
   }, [])
 
-  // Typing animation
   useEffect(() => {
     let index = 0
     const interval = setInterval(() => {
@@ -60,7 +60,6 @@ export default function HeroSection({ onUnlockScroll, onNav }: HeroSectionProps)
     return () => clearInterval(interval)
   }, [])
 
-  // Text switch + nav reveal
   useEffect(() => {
     if (!typingDone || !sectionRef.current) return
 
@@ -94,7 +93,6 @@ export default function HeroSection({ onUnlockScroll, onNav }: HeroSectionProps)
     return () => scroll.kill()
   }, [typingDone])
 
-  // Fade content blocks + scroll video
   useEffect(() => {
     const section = sectionRef.current
     const video = videoRef.current
@@ -176,9 +174,9 @@ export default function HeroSection({ onUnlockScroll, onNav }: HeroSectionProps)
 
       {showNav && (
         <div className={styles.navButtons}>
-          <button onClick={() => { onUnlockScroll(); onNav('portfolio') }}>Portfolio</button>
-          <button onClick={() => { onUnlockScroll(); onNav('resume') }}>Resume</button>
-          <button onClick={() => { onUnlockScroll(); onNav('contact') }}>Contact</button>
+          <Button onClick={() => { onUnlockScroll(); onNav('portfolio') }}>Portfolio</Button>
+          <Button onClick={() => { onUnlockScroll(); onNav('resume') }}>Resume</Button>
+          <Button onClick={() => { onUnlockScroll(); onNav('contact') }}>Contact</Button>
         </div>
       )}
     </section>

@@ -1,6 +1,7 @@
 'use client'
 
 import SectionHeader from '@/components/ui/SectionHeader'
+import Header from '@/components/ui/Header'
 import ProjectCard from '@/components/portfolio/ProjectCard'
 import styles from './PortfolioSection.module.scss'
 
@@ -10,6 +11,11 @@ export default function PortfolioSection() {
   return (
     <section className={styles.container}>
       <div className={styles.header}>
+        <Header
+        line="Selected works"
+        imgSrc="/amphora.png" // your transparent PNG path
+        alt="Decorative stroke"
+      />
         <SectionHeader line="Portfolio" videoWidth={350}/>
       </div>
 

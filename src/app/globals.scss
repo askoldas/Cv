@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@use '@/_variables' as *;
 
 /* ---------------------------
    CSS Reset
@@ -40,4 +40,3 @@ a {
   color: inherit;
   text-decoration: none;
 }
-

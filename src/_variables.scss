@@ -1,0 +1,51 @@
+// Colors
+$color-background: #000000;
+$color-text-base: #ffffff;
+$color-text-muted: #cccccc;
+$color-accent: rgb(240, 195, 50);
+
+$color-border: rgba(255, 255, 255, 0.1);
+$color-line: rgba(255, 255, 255, 0.2);
+$color-dot-border: rgba(255, 255, 255, 0.4);
+$color-dot-active: #ffffff;
+$color-shadow: rgba(0, 0, 0, 0.3);
+
+// Typography
+$font-family-base: 'Inter', sans-serif;
+$font-family-heading: var(--font-cormorant);
+
+$font-size-xs: 0.85rem;
+$font-size-sm: 1rem;
+$font-size-md: 1.05rem;
+$font-size-lg: 1.2rem;
+$font-size-xl: 1.5rem;
+$font-size-xxl: 2rem;
+
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+
+// Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 3rem;
+$spacing-xl: 4rem;
+
+// Border Radius
+$radius-sm: 8px;
+$radius-md: 12px;
+$radius-lg: 16px;
+
+// Z-Index
+$z-video: -1;
+$z-default: 1;
+$z-overlay: 2;
+
+// Opacity
+$opacity-muted: 0.4;
+
+// Shadows
+$shadow-soft: 0 8px 20px $color-shadow;
+
+// Misc
+$timeline-width: 2px;
